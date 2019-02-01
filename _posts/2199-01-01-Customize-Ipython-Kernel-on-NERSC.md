@@ -1,11 +1,10 @@
 ---
-title: 'Customize-Ipython-Kernel-on-NERSC'
+title: 'Customize Ipython Kernel on NERSC'
 date: 2019-02-01
 permalink: /posts/2012/08/blog-post-4/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - Jupyter notebook
+  - python
 ---
 
 I will talk about customizing your kernel on Jupyter-dev.nersc.gov. Here I will use `nersc` as my new environment name. 
