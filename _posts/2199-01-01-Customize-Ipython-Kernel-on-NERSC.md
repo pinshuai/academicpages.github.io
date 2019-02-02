@@ -1,7 +1,7 @@
 ---
 title: 'Customize Ipython Kernel on NERSC'
 date: 2019-02-01
-permalink: /posts/2012/08/blog-post-4/
+permalink: /posts/2019/02/Customize-Ipython-Kernel-on-NERSC/
 tags:
   - Jupyter notebook
   - python
