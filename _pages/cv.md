@@ -11,30 +11,27 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in Geology, Texas A&M University, 2017
+  * Disertation: [Fate and Transport of Nutrients and Contaminants Under the Impact of Surface Water and Groundwater Interactions](https://oaktrust.library.tamu.edu/handle/1969.1/165937)
+  * Advisor: [Peter Knappett](https://geoweb.tamu.edu/people/faculty/knappettpeter.html)
+* M.S. in Water Resources Engineering, Wuhan University, 2013
+  * Thesis: Using Bromide as Tracer to Estimate Groundwater Recharge in the Northern China Plain
+  * Advisor: Jinzhong Yang
+* B.S. in Water Resources Engineering, Wuhan University, 2011
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Post doctorate, Pacific Northwest National Laboratory, 2017-present
+  * Supervisor: Xingyuan Chen
+* Graduate RA/TA, Texas A&M University, 2013-2017
+* Summer Intern, Pacific Northwest National Laboratory, 2016
+  * Supervisor: Xingyuan Chen
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming language: Python, R, Matlab
+* Computational software: [PFLOTRAN](https://www.pflotran.org/), [COMSOL](https://www.comsol.com/), [MODFLOW](https://water.usgs.gov/ogw/modflow/)
+* Office software: Adobe Illustrator, Microsoft Suites
 
 Publications
 ======
@@ -42,18 +39,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* 
