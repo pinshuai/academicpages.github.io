@@ -1,12 +1,12 @@
 #!/bin/bash
-echo "execute publications.ipynb"
+echo "--execute publications.ipynb"
 jupyter nbconvert --to notebook --inplace --execute publications.ipynb 
 
-echo "push changes to github"
+echo "--push changes to github"
 git pull origin master
 git add --all
 git commit -m 'update publication list'
 git push origin master
-echo "Done!"
+echo "--Done!"
 
 
