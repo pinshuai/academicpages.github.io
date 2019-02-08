@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+You can also download the [PDF](../files/pshuai-cv.pdf).
+
 Education
 ======
 * Ph.D in Geology, Texas A&M University, 2017
