@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-You can also download the [PDF](../files/pshuai-cv.pdf).
+You can also download the [PDF](../cv/pshuai-cv.pdf).
 
 Education
 ======
@@ -31,9 +31,15 @@ Work experience
   
 Skills
 ======
-* Programming language: Python, R, Matlab
-* Computational software: [PFLOTRAN](https://www.pflotran.org/), [COMSOL](https://www.comsol.com/), [MODFLOW](https://water.usgs.gov/ogw/modflow/)
-* Office software: Adobe Illustrator, Microsoft Suites
+**Programming**: Matlab••• Python•• R••  Shell•• C/C++• Fortran•
+
+**Software**: [PFLOTRAN](https://www.pflotran.org/)••• [COMSOL Multiphysics](https://www.comsol.com/)••• [MODFLOW](https://water.usgs.gov/ogw/modflow/)•• [HYDRUS 2D](https://www.pc-progress.com/en/Default.aspx?hydrus-3d)•• [ParaView](https://www.paraview.org/)•• [QGIS](https://www.qgis.org/en/site/)•• Adobe Illustrator••• Adobe Photoshop•• MS Office••• 
+
+**OS**: Windows••• Unix••
+
+**Languages**: Chinese••• English••
+
+•••Native/Proficient ••Professional/Experienced •Elementary
 
 Publications
 ======
@@ -41,7 +47,3 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-  
-Service and leadership
-======
-* 
