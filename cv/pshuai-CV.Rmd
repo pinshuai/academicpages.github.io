@@ -149,6 +149,10 @@ Geological Society of America (GSA), Member \hfill 2014 - 2015
 
 International Association for Hydro-Environment Engineering and Research (IAHR), Member \hfill 2011-2013
 
+# Professional and Public Service
+
+**Manuscript reviewer**: Water Resources Research, Journal of Hydrology
+
 # Skills 
 
 **Programming**: Matlab••• Python•• R••  Shell•• C/C++• Fortran•
