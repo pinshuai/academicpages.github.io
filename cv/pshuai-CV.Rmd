@@ -103,7 +103,7 @@ Song X., X. Chen, J.M. Zachara, J. Gomez-Velez, **P. Shuai**, H. Ren, and G. Ham
 
 **Shuai P.**, X. Chen, X. Song, G.E. Hammond, J.M. Zachara, P.D. Royer, and H. Ren, et al. (2018). "Hydrogeomorphic Controls on Hydrologic Exchange Flows Dynamics within a Large Regulated River Corridor." *Poster presentation at AGU Fall meeting 2018*, Washington Dc, District Of Columbia. United States.
 
-**Shuai P.**, X. Chen, X. Song, G.E. Hammond, J.M. Zachara, P.D. Royer, and H. Ren, et al. (2018). "Hydrologic Exchange Flows Dynamics along a Large Regulated River Corridor." *Oral presentation at Post-graduate Research Symposium*, Richland, Washington, United States.
+**Shuai P.**, X. Chen, X. Song, G.E. Hammond, J.M. Zachara, P.D. Royer, and H. Ren, et al. (2018). "Hydrologic Exchange Flows Dynamics along a Large Regulated River Corridor." *Oral presentation at Post-graduate Research Symposium at PNNL*, Richland, Washington, United States.
 
 Wang L., **P. Shuai**, P. S. K. Knappett, M. B. Cardenas. Accumulation of arsenic in dynamic iron oxide barriers due to river stage oscillations: A multiphysics modeling analysis.*Oral presentation at AGU Fall meeting 2018*, Washington Dc, District Of Columbia. United States.
 
@@ -154,6 +154,7 @@ International Association for Hydro-Environment Engineering and Research (IAHR),
 # Professional and Public Service
 
 **Manuscript reviewer** for Water Resources Research, Journal of Hydrology
+
 **Student judge** for Outstanding Student Presentation Awards at AGU Anual Meeting 2018
 
 # Skills 
