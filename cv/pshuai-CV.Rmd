@@ -31,63 +31,63 @@ urlcolor: blue
 
 Groundwater and surface water interactions, nutrient cycling, hyporheic zone, field hydrogeology, numerical modeling and techniques.
 
-<!-- *Arthur Guinness & Son* -->
-
-<!-- Chief Brewer (Park Royal) \hfill 1935-1937 -->
-
-<!-- Researcher (Dublin) \hfill 1899-1935 -->
-
 # Education
 
-**Texas A&M University (College Station, TX)**, Ph.D. Geology \hfill 2017
+*Texas A&M University (College Station, TX)*, Ph.D. Geology \hfill 2017
 
-**Wuhan University (China)**, M.S. Water Resources Engineering \hfill 2013
+Dissertation: Nutrients and Contaminants Fate and Transport under the Impact of Groundwater and Surface Water Interactions [[link]](https://oaktrust.library.tamu.edu/handle/1969.1/165937)
 
-**Wuhan University (China)**, B.S. Water Resources Engineering \hfill 2011
+Advisor: Dr. Peter Knappett (Co-advised by Dr. M. Bayani Cardenas at UT Austin)
+
+*Wuhan University (China)*, M.S. Water Resources Engineering \hfill 2013
+
+*Wuhan University (China)*, B.S. Water Resources Engineering \hfill 2011
 
 # Research Experience
 
-**Post Doctorate Research Associate, Advanced Study & Development Group** \hfill 2017 - present
+*Post Doctorate Research Associate, Advanced Study & Development Group* \hfill 2017 - present
 
 Pacific Northwest National Laboratory, Richland, Washington
 
-**Graduate Research Assistant, Department of Geology and Geophysics** \hfill 2013 - 2017
+*Graduate Research Assistant, Department of Geology and Geophysics* \hfill 2013 - 2017
 
 Texas A&M University, College Station, Texas
 
-**Alternate Student Fellowship, Atmospheric Sciences & Global Change Group** \hfill summer, 2016
+*Alternate Student Fellowship, Atmospheric Sciences & Global Change Group* \hfill summer, 2016
 
 Pacific Northwest National Laboratory, Richland, Washington
 
-**Graduate Research Assistant, College of Water Resources and Hydropower Engineering** \hfill 2011 - 2013
+*Graduate Research Assistant, College of Water Resources and Hydropower Engineering* \hfill 2011 - 2013
 
 Wuhan University, Wuhan, China
 
 # Publications
 
+Also see my [Google Scholar](https://scholar.google.com/citations?user=Md_6je0AAAAJ&hl=en)
+
 ## Journal Articles
 
-**Shuai, P.**, X. Chen, X. Song, G. Hammond, J. Zachara, P. Royer, H. Ren, W. Perkins, M. Richmond, M. Huang (2018). Dam Operations and Subsurface Hydrogeology Control Dynamics of Hydrologic Exchange Flows in a Regulated River Reach. *Earth and Space Science Open Archive*. https://doi.org/10.1002/essoar.10500054.1
+[7] **Shuai, P.**, X. Chen, X. Song, G. Hammond, J. Zachara, P. Royer, H. Ren, W. Perkins, M. Richmond, M. Huang (2018). Dam Operations and Subsurface Hydrogeology Control Dynamics of Hydrologic Exchange Flows in a Regulated River Reach. *Water Resources Research*. https://doi.org/10.1029/2018WR024193
 
-Berube, M., K. Jewell, K. Myers, P. S.K. Knappett, **P. Shuai**, N. Dimova, A. Hossain, M. Lipsi, S. Hossain, J. Peterson, K. M. Ahmed, S. Datta (2018). The fate of arsenic in groundwater discharged to the Meghna River, Bangladesh. *Environmental Chemistry*, 15(2), 29. https://doi.org/10.1071/EN17104
+[6] Berube, M., K. Jewell, K. Myers, P. S.K. Knappett, **P. Shuai**, N. Dimova, A. Hossain, M. Lipsi, S. Hossain, J. Peterson, K. M. Ahmed, S. Datta (2018). The fate of arsenic in groundwater discharged to the Meghna River, Bangladesh. *Environmental Chemistry*, 15(2), 29. https://doi.org/10.1071/EN17104
 
-**Shuai, P.**, M. B. Cardenas, P. S. K. Knappett, P. C. Bennett, B. T. Neilson (2017). Denitrification in the banks of fluctuating rivers: The effects of river stage amplitude, sediment hydraulic conductivity and dispersivity, and ambient groundwater flow. *Water Resources Research*, 53(9), 7951–7967. https://doi.org/10.1002/2017WR020610 
+[5] **Shuai, P.**, M. B. Cardenas, P. S. K. Knappett, P. C. Bennett, B. T. Neilson (2017). Denitrification in the banks of fluctuating rivers: The effects of river stage amplitude, sediment hydraulic conductivity and dispersivity, and ambient groundwater flow. *Water Resources Research*, 53(9), 7951–7967. https://doi.org/10.1002/2017WR020610 
 
-**Shuai, P.**, P. S. K. Knappett , S. Hossain, A. Hosain, K. Rhodes, K. M. Ahmed, M. B. Cardenas (2017). The Impact of the Degree of Aquifer Confinement and Anisotropy on Tidal Pulse Propagation. *Groundwater*, 55(4), 519–531. https://doi.org/10.1111/gwat.12509
+[4] **Shuai, P.**, P. S. K. Knappett , S. Hossain, A. Hosain, K. Rhodes, K. M. Ahmed, M. B. Cardenas (2017). The Impact of the Degree of Aquifer Confinement and Anisotropy on Tidal Pulse Propagation. *Groundwater*, 55(4), 519–531. https://doi.org/10.1111/gwat.12509
 
-Knappett, P.S.K., B.J. Mailloux, I. Choudhury, M.R. Khan, H.A. Michael, S. Barua, D.R. Mondal, M.S. Steckler, S.H. Akhter, K.M. Ahmed, B. Bostick, C.F. Harvey, M. Shamsudduha, **P. Shuai**, I. Mihajlov, R. Mozumder, A. van Geen (2016). Vulnerability of low-arsenic aquifers to municipal pumping in Bangladesh. *Journal of Hydrology*, 539, 674–686. https://doi.org/10.1016/j.jhydrol.2016.05.035 
+[3] Knappett, P.S.K., B.J. Mailloux, I. Choudhury, M.R. Khan, H.A. Michael, S. Barua, D.R. Mondal, M.S. Steckler, S.H. Akhter, K.M. Ahmed, B. Bostick, C.F. Harvey, M. Shamsudduha, **P. Shuai**, I. Mihajlov, R. Mozumder, A. van Geen (2016). Vulnerability of low-arsenic aquifers to municipal pumping in Bangladesh. *Journal of Hydrology*, 539, 674–686. https://doi.org/10.1016/j.jhydrol.2016.05.035 
 
-Briody, A.C., M.B. Cardenas, **P. Shuai**, P.S.K. Knappett, and P.C. Bennett (2016). Groundwater flow, nutrient, and stable isotope dynamics in the parafluvial-hyporheic zone of the regulated Lower Colorado River (Texas, USA) over the course of a small flood. *Hydrogeology Journal*. https://doi:10.1007/s10040-016-1365-3.
+[2] Briody, A.C., M.B. Cardenas, **P. Shuai**, P.S.K. Knappett, and P.C. Bennett (2016). Groundwater flow, nutrient, and stable isotope dynamics in the parafluvial-hyporheic zone of the regulated Lower Colorado River (Texas, USA) over the course of a small flood. *Hydrogeology Journal*. https://doi:10.1007/s10040-016-1365-3.
 
-**Shuai, P.**, L. Shi, S. Cai and J. Yang (2014). The usage of bromide as a tracer to estimate groundwater recharge rate at Northern China Plain. *Journal of Irrigation and Drainage*. 33, no. 2:11-16. (In Chinese) [[link]](http://www.cqvip.com/qk/93783a/201402/49526144.html)
+[1] **Shuai, P.**, L. Shi, S. Cai and J. Yang (2014). The usage of bromide as a tracer to estimate groundwater recharge rate at Northern China Plain. *Journal of Irrigation and Drainage*. 33, no. 2:11-16. (In Chinese) [[link]](http://www.cqvip.com/qk/93783a/201402/49526144.html)
 
 ## Conference Article
 
-Knappett, P. S. K., K. Myers, **P. Shuai**, K. Rhodes, K. Jewell, J. Peterson, N. Dimova et al. (2016). Tracking the fate of arsenic in groundwater discharged to the Meghna River. *In Arsenic Research and Global Sustainability: Proceedings of the Sixth International Congress on Arsenic in the Environment (As2016)*, June 19-23, 2016, Stockholm, Sweden, p. 43. CRC Press. [[link]](https://www.crcpress.com/Arsenic-Research-and-Global-Sustainability-Proceedings-of-the-Sixth-International/Bhattacharya-Vahter-Jarsjo-Kumpiene-Ahmad-Sparrenbom-Jacks-Donselaar-Bundschuh-Naidu/p/book/9781138029415)
+[1] Knappett, P. S. K., K. Myers, **P. Shuai**, K. Rhodes, K. Jewell, J. Peterson, N. Dimova et al. (2016). Tracking the fate of arsenic in groundwater discharged to the Meghna River. *In Arsenic Research and Global Sustainability: Proceedings of the Sixth International Congress on Arsenic in the Environment (As2016)*, June 19-23, 2016, Stockholm, Sweden, p. 43. CRC Press. [[link]](https://www.crcpress.com/Arsenic-Research-and-Global-Sustainability-Proceedings-of-the-Sixth-International/Bhattacharya-Vahter-Jarsjo-Kumpiene-Ahmad-Sparrenbom-Jacks-Donselaar-Bundschuh-Naidu/p/book/9781138029415)
 
 ## Working Papers and Works in Progress
 
-Zachara J., X. Chen, X. Song, **P. Shuai**, C. Murray, C. Resch. Kilometer-scale hydrologic exchange flows in a river corridor and their implications to solute migration. (*Submitted*)
+Zachara J., X. Chen, X. Song, **P. Shuai**, C. Murray, C. Resch. Kilometer-scale hydrologic exchange flows in a river corridor and their implications to solute migration. (*Submitted to Water Resources Research*)
 
 **Shuai P.**, X. Chen et al. The effects of river morphology and sediment permeability on river corridor seasonal thermal regime under hydropeaking and thermopeaking. (*In Preparation*)
 
@@ -125,23 +125,23 @@ Knappett, P. S. K., S. Datta, N. Dimova, K. Myers, A. Hossain, M. Berube, **P. S
 
 # Teaching Experience
 
-**Graduate Teaching Assistant**, Intro to Geochemistry (GEOL 453), Texas A&M University \hfill 2017
+*Graduate Teaching Assistant*, Intro to Geochemistry (GEOL 453), Texas A&M University \hfill 2017
 
-**Graduate Teaching Assistant**, Hydrogeology (GEOL 410), Texas A&M University \hfill 2016
+*Graduate Teaching Assistant*, Hydrogeology (GEOL 410), Texas A&M University \hfill 2016
 
-**Graduate Teaching Assistant**, Physical Geology Lab (GEOL 104), Texas A&M University \hfill 2015
+*Graduate Teaching Assistant*, Physical Geology Lab (GEOL 104), Texas A&M University \hfill 2015
 
-**Graduate Teaching Assistant**, Principals of Geology (GEOL 101), Texas A&M University \hfill 2014
+*Graduate Teaching Assistant*, Principals of Geology (GEOL 101), Texas A&M University \hfill 2014
 
 # Fellowships & Awards
 
-**Texas A&M University**, Graduate Fellowship \hfill 2013 - 2017
+*Texas A&M University*, Graduate Fellowship \hfill 2013 - 2017
 
-**Geological Society of America**, On To the Future (OTF) travel award \hfill 2016
+*Geological Society of America*, On To the Future (OTF) travel award \hfill 2016
 
-**Geological Society of America**, Student Research Grant \hfill 2015
+*Geological Society of America*, Student Research Grant \hfill 2015
 
-**Wuhan University (China)**, Graduate Fellowship \hfill 2011 - 2013
+*Wuhan University (China)*, Graduate Fellowship \hfill 2011 - 2013
 
 # Professional Memberships
 
@@ -153,19 +153,19 @@ International Association for Hydro-Environment Engineering and Research (IAHR),
 
 # Professional and Public Service
 
-**Manuscript reviewer** for Water Resources Research, Journal of Hydrology
+*Manuscript reviewer* for Water Resources Research, Journal of Hydrology
 
-**Student judge** for Outstanding Student Presentation Awards at AGU Anual Meeting 2018
+*Student judge* for Outstanding Student Presentation Awards at AGU Anual Meeting 2018
 
 # Skills 
 
-**Programming**: Matlab••• Python•• R••  Shell•• C/C++• Fortran•
+*Programming*: Matlab••• Python•• R••  Shell•• C/C++• Fortran•
 
-**Software**: [PFLOTRAN](https://www.pflotran.org/)••• [COMSOL Multiphysics](https://www.comsol.com/)••• [MODFLOW](https://water.usgs.gov/ogw/modflow/)•• [HYDRUS 2D](https://www.pc-progress.com/en/Default.aspx?hydrus-3d)•• [ParaView](https://www.paraview.org/)•• [QGIS](https://www.qgis.org/en/site/)•• Adobe Illustrator••• Adobe Photoshop•• MS Office••• 
+*Software*: [PFLOTRAN](https://www.pflotran.org/)••• [COMSOL Multiphysics](https://www.comsol.com/)••• [MODFLOW](https://water.usgs.gov/ogw/modflow/)•• [HYDRUS 2D](https://www.pc-progress.com/en/Default.aspx?hydrus-3d)•• [ParaView](https://www.paraview.org/)•• [QGIS](https://www.qgis.org/en/site/)•• Adobe Illustrator••• Adobe Photoshop•• MS Office••• 
 
-**OS**: Windows••• Unix••
+*OS*: Windows••• Unix••
 
-**Languages**: Chinese••• English••
+*Languages*: Chinese••• English••
 
 •••Native/Proficient ••Professional/Experienced •Elementary
 

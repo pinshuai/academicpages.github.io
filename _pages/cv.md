@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-You can also download the [PDF](../cv/pshuai-cv.pdf).
+For a complete CV, you can download the [PDF](../cv/pshuai-cv.pdf).
 
 Education
 ======
@@ -21,13 +21,19 @@ Education
   * Advisor: Jinzhong Yang
 * B.S. in Water Resources Engineering, Wuhan University, 2011
 
-Work experience
+Work Experience
 ======
-* Post doctorate, Pacific Northwest National Laboratory, 2017-present
+* Post Doctorate Research Associate, Pacific Northwest National Laboratory, 2017-present
   * Supervisor: Xingyuan Chen
 * Graduate RA/TA, Texas A&M University, 2013-2017
 * Summer Intern, Pacific Northwest National Laboratory, 2016
   * Supervisor: Xingyuan Chen
+  
+Publications
+======
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
   
 Skills
 ======
@@ -40,10 +46,3 @@ Skills
 **Languages**: Chinese••• English••
 
 •••Native/Proficient ••Professional/Experienced •Elementary
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
