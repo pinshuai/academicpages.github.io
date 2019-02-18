@@ -7,4 +7,4 @@ This CV is modified from [Steven V. Miller](http://svmiller.com) (see this [post
 * Download [Basic Tex](http://www.tug.org/mactex/morepackages.html)
 * Open `svm-rmarkdown-cv.Rmd` using Rstudio
 * Change the content in the YAML and markdown
-* Use `Knit` to generate the PDF (you may want to install any missing Tex fonts/packages using `sudo tlmgr install PACKAGENAME`)
+* Use `Knit` to generate the PDF (you may want to install any missing Tex fonts/packages using `sudo tlmgr install PACKAGENAME`, e.g `sudo tlmgr install abstract` if `abstract.sty` is missing.)
