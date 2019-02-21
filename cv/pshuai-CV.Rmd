@@ -26,6 +26,23 @@ fontsize: 11pt
 linkcolor: blue
 urlcolor: blue
 ---
+<!-- \RequirePackage{xcolor} -->
+<!-- \colorlet{emphasis}{black} -->
+
+<!-- \newcommand{\itemmarker}{{\small\textbullet}} -->
+<!-- \newcommand{\ratingmarker}{\faCircle} -->
+
+<!-- \newcommand{\cvskill}[2]{% -->
+<!-- \textcolor{black}{\textbf{#1}}\hfill -->
+<!-- \foreach \x in {1,...,5}{% -->
+<!--   \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par% -->
+<!-- } -->
+
+<!-- \cvskill{English}{5} -->
+
+<!-- \newcommand{\var}{\mathrm{Var}} -->
+
+<!-- $\var+2$ -->
 
 # Research Topics
 
@@ -122,6 +139,12 @@ Zachara J.M., X. Chen, **P. Shuai**, D.B. Kent, and G.E. Hammond. (2018) "Surfac
 Knappett, P. S. K., S. Datta, N. Dimova, K. Myers, A. Hossain, M. Berube, **P. Shuai**, K. Rhodes, K. Jewell, M. Lipsi, S. Hossain, A. Hosain, J. Peterson, K. Ahmed, (2016) “Hydrological mechanism for arsenic deposits in Meghna River hyporheic zone sediments,” *Poster Presentation at EGU General Assembly 2016*, Vienna, Austria
 
 **Shuai, P.**, Hossain, A., Rhodes, K., Knappett, P. S. K., Dimova, N., Cardenas, M. B., Matin, K. R., Michael, H., Mozumder, R., van Geen, A. (2015) “Modeling arsenic mobilization in a riverbank aquifer under the influence of tidally fluctuating river and irrigation pumping,” *Poster Presentation at AGU Fall Meeting 2015*, San Francisco, CA
+
+<!-- # Projects Participation -->
+
+<!-- SFA -->
+<!-- NSF -->
+<!-- NSF-China -->
 
 # Teaching Experience
 
