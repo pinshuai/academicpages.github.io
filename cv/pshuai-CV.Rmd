@@ -140,11 +140,23 @@ Knappett, P. S. K., S. Datta, N. Dimova, K. Myers, A. Hossain, M. Berube, **P. S
 
 **Shuai, P.**, Hossain, A., Rhodes, K., Knappett, P. S. K., Dimova, N., Cardenas, M. B., Matin, K. R., Michael, H., Mozumder, R., van Geen, A. (2015) “Modeling arsenic mobilization in a riverbank aquifer under the influence of tidally fluctuating river and irrigation pumping,” *Poster Presentation at AGU Fall Meeting 2015*, San Francisco, CA
 
-<!-- # Projects Participation -->
+# Projects Participation
 
-<!-- SFA -->
-<!-- NSF -->
-<!-- NSF-China -->
+**U.S. Department of Energy (DOE)**, Subsurface Biogeochemistry Research, Participant \hfill 2017 - present
+
+*[Influences of Hydrologic Exchange Flows on River Corridor and Watershed Biogeochemical Function](https://sbrsfa.pnnl.gov/)*
+
+**National Science Foundation (NSF)**, EAR-Hydrologic Sciences, Participant \hfill 2014 - 2017
+
+*[Collaborative Research: The effects of river regulation on lateral and integrated longitudinal mass and energy transfers in coupled terrestrial-aquatic systems](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1344547)*
+
+**Geological Society of America**, Graduate Research Grant, PI \hfill 2015 - 2016
+
+*Investigating impacts of irrigation pumping on Arsenic migration from Meghna River*
+
+**National Program on Key Basic Research Project of China (973 Program)**, Participant \hfill 2011 - 2013
+
+*Evolution Mechanism and Control of Groundwater in the North China Plain*
 
 # Teaching Experience
 
