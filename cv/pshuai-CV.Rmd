@@ -26,23 +26,6 @@ fontsize: 11pt
 linkcolor: blue
 urlcolor: blue
 ---
-<!-- \RequirePackage{xcolor} -->
-<!-- \colorlet{emphasis}{black} -->
-
-<!-- \newcommand{\itemmarker}{{\small\textbullet}} -->
-<!-- \newcommand{\ratingmarker}{\faCircle} -->
-
-<!-- \newcommand{\cvskill}[2]{% -->
-<!-- \textcolor{black}{\textbf{#1}}\hfill -->
-<!-- \foreach \x in {1,...,5}{% -->
-<!--   \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par% -->
-<!-- } -->
-
-<!-- \cvskill{English}{5} -->
-
-<!-- \newcommand{\var}{\mathrm{Var}} -->
-
-<!-- $\var+2$ -->
 
 # Research Topics
 
@@ -98,7 +81,7 @@ Also see my [Google Scholar](https://scholar.google.com/citations?user=Md_6je0AA
 
 [1] **Shuai, P.**, L. Shi, S. Cai and J. Yang (2014). The usage of bromide as a tracer to estimate groundwater recharge rate at Northern China Plain. *Journal of Irrigation and Drainage*. 33, no. 2:11-16. (In Chinese) [[link]](http://www.cqvip.com/qk/93783a/201402/49526144.html)
 
-## Conference Article
+## Conference Proceedings
 
 [1] Knappett, P. S. K., K. Myers, **P. Shuai**, K. Rhodes, K. Jewell, J. Peterson, N. Dimova et al. (2016). Tracking the fate of arsenic in groundwater discharged to the Meghna River. *In Arsenic Research and Global Sustainability: Proceedings of the Sixth International Congress on Arsenic in the Environment (As2016)*, June 19-23, 2016, Stockholm, Sweden, p. 43. CRC Press. [[link]](https://www.crcpress.com/Arsenic-Research-and-Global-Sustainability-Proceedings-of-the-Sixth-International/Bhattacharya-Vahter-Jarsjo-Kumpiene-Ahmad-Sparrenbom-Jacks-Donselaar-Bundschuh-Naidu/p/book/9781138029415)
 
