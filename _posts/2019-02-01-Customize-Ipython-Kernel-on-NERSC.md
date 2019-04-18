@@ -21,6 +21,8 @@ I will talk about customizing your kernel on Jupyter-dev.nersc.gov. Here I will 
   ```bash
   conda create --name nersc --file spec-file.txt
   ```
+  
+ Note: Both Python and R kernel will be automatically installed if packages includes `r-essentials`. Alternatively, you can create R kernel using `conda create -n NAme r-essentials`
 
 ## Install packages 
   You can install any package that is not included in "spec-file.txt". 
