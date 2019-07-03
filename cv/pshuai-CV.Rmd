@@ -67,7 +67,7 @@ Also see my [Google Scholar](https://scholar.google.com/citations?user=Md_6je0AA
 
 ## Journal Articles
 
-[7] **Shuai, P.**, X. Chen, X. Song, G. Hammond, J. Zachara, P. Royer, H. Ren, W. Perkins, M. Richmond, M. Huang (2018). Dam Operations and Subsurface Hydrogeology Control Dynamics of Hydrologic Exchange Flows in a Regulated River Reach. *Water Resources Research*. https://doi.org/10.1029/2018WR024193
+[7] **Shuai, P.**, X. Chen, X. Song, G. Hammond, J. Zachara, P. Royer, H. Ren, W. Perkins, M. Richmond, M. Huang (2019). Dam Operations and Subsurface Hydrogeology Control Dynamics of Hydrologic Exchange Flows in a Regulated River Reach. *Water Resources Research*. https://doi.org/10.1029/2018WR024193
 
 [6] Berube, M., K. Jewell, K. Myers, P. S.K. Knappett, **P. Shuai**, N. Dimova, A. Hossain, M. Lipsi, S. Hossain, J. Peterson, K. M. Ahmed, S. Datta (2018). The fate of arsenic in groundwater discharged to the Meghna River, Bangladesh. *Environmental Chemistry*, 15(2), 29. https://doi.org/10.1071/EN17104
 
@@ -91,37 +91,31 @@ Zachara J., X. Chen, X. Song, **P. Shuai**, C. Murray, C. Resch. Kilometer-scale
 
 **Shuai P.**, X. Chen et al. The effects of river morphology and sediment permeability on river corridor seasonal thermal regime under hydropeaking and thermopeaking. (*In Preparation*)
 
-Song X., X. Chen, J.M. Zachara, J. Gomez-Velez, **P. Shuai**, H. Ren, and G. Hammond. (2019). "Dynamic River Stage Variations Lead to Multimodal Residence Time Distributions of Hydrological Exchange Flow." (*In Preparation*) 
+Song X., X. Chen, J.M. Zachara, J. Gomez-Velez, **P. Shuai**, H. Ren, and G. Hammond. (2019). Dynamic River Stage Variations Lead to Multimodal Residence Time Distributions of Hydrological Exchange Flow. (*In Preparation*) 
+
+Chen K., X. Chen, X. Song, G. Hammond, H. Zhan, **P. Shuai**, and J. M. Zachara. (2019). Using Ensemble Data Assimilation to Estimate Transient Hydrologic Exchange Fluxes under Highly Dynamic Flow Conditions. (*In Preparation*)
 
 Wang L., **P. Shuai**, P. S. K. Knappett, M. B. Cardenas. Accumulation of arsenic in dynamic iron oxide barriers due to river stage oscillations: A multiphysics modeling analysis. (*In Preparation*)
 
 # Conference Presentations
 
-**Shuai P.**, X. Chen, X. Song, G. Hammond, J.M. Zachara, P.D. Royer, and H. Ren, et al. (2019). "Dam Operations and Subsurface Hydrogeology Control Dynamics of Hydrologic Exchange Flows in a Large Regulated River Corridor within the Hanford Reach, Washington." *Oral presentation 12 th Washington Hydrogeology Symposium*, Tacoma, Washington. 
+**Shuai P.**, X. Chen, X. Song, and K. Chen. (2019). "Boosting Research Reproducibility: Managing High Performance Model Simulation Workflow Using Jupyter Notebook." *Oral presentation at Techfest 2019*, Richland, Washington.
 
-Song X., X. Chen, J.M. Zachara, J. Gomez-Velez, **P. Shuai**, H. Ren, and G. Hammond. (2019). "Dynamic River Stage Variations Lead to Multimodal Residence Time Distributions of Hydrological Exchange Flow." *Oral presentation at 12th Washington Hydrogeology Symposium*, Tacoma, Washington. 
+**Shuai P.**, X. Chen, X. Song, K. Chen, and G. Hammond, (2019) "Modeling River Corridor Thermal Regime Using High Performance Parallel Subsurface Simulator: An Example with PFLOTRAN." *Oral presentation at Modflow and More 2019*, Golden, Colorado.
 
-**Shuai P.**, X. Chen, X. Song, G.E. Hammond, J.M. Zachara, P.D. Royer, and H. Ren, et al. (2018). "Hydrogeomorphic Controls on Hydrologic Exchange Flows Dynamics within a Large Regulated River Corridor." *Poster presentation at AGU Fall meeting 2018*, Washington Dc, District Of Columbia. United States.
+**Shuai P.**, X. Chen, X. Song, G. Hammond, J.M. Zachara, P.D. Royer, and H. Ren, et al. (2019). "Dam Operations and Subsurface Hydrogeology Control Dynamics of Hydrologic Exchange Flows in a Large Regulated River Corridor within the Hanford Reach, Washington." *Oral presentation at 12th Washington Hydrogeology Symposium*, Tacoma, Washington. 
+
+**Shuai P.**, X. Chen, X. Song, G.E. Hammond, J.M. Zachara, P.D. Royer, and H. Ren, et al. (2018). "Hydrogeomorphic Controls on Hydrologic Exchange Flows Dynamics within a Large Regulated River Corridor." *Poster presentation at AGU Fall meeting*, Washington, DC, United States.
+
+Wang L., **P. Shuai**, P. S. K. Knappett, M. B. Cardenas, (2018) "Accumulation of arsenic in dynamic iron oxide barriers due to river stage oscillations: A multiphysics modeling analysis."" *Oral presentation at AGU Fall meeting*, Washington, DC, United States (presented for Lichun Wang).
 
 **Shuai P.**, X. Chen, X. Song, G.E. Hammond, J.M. Zachara, P.D. Royer, and H. Ren, et al. (2018). "Hydrologic Exchange Flows Dynamics along a Large Regulated River Corridor." *Oral presentation at Post-graduate Research Symposium at PNNL*, Richland, Washington, United States.
 
-Wang L., **P. Shuai**, P. S. K. Knappett, M. B. Cardenas. Accumulation of arsenic in dynamic iron oxide barriers due to river stage oscillations: A multiphysics modeling analysis.*Oral presentation at AGU Fall meeting 2018*, Washington Dc, District Of Columbia. United States.
-
-Bao J., Y. Fang, X. Song, Z. Duan, H. Ren, X. Chen, and **P. Shuai**, et al. (2018). "Three-Dimensional OpenFOAM-PFLOTRAN Coupled Model for Mechanistic Simulation of Hydrologic Exchange Flows in Varied Hydromorphic Settings." *Poster presentation at AGU Fall meeting 2018*, Washington, D.C., United States. 
-
-Chen X., **P. Shuai**, X. Song, G.E. Hammond, T.C. Johnson, and J.M. Zachara. (2018). "Using Sensitivity Analysis and Data Assimilation to Improve Process Understanding of Hydrologic Exchange Flows in Dynamic River Corridors." *Poster presentation at AGU Fall Meeting 2018*, Washington, District Of Columbia, United States. 
-
-Chen X., X. Song, J.M. Zachara, **P. Shuai**, G.E. Hammond, and J.C. Stegen. (2018). "The Importance of Long-term Monitoring and Numerical Modeling fo Understanding Contaminant Transport in Dynamic System." *Oral presentation at International Summit Forum of Chinese Academy of Engineering on Water Pollution*, Hangzhou, China. 
-
-Zachara J.M., X. Chen, **P. Shuai**, D.B. Kent, and G.E. Hammond. (2018) "Surface Complexation from the Grain to Plume Scale in a Gravel Aquifer Influenced by Surface Water Exchange." *Presented at ACS National Meeting*, New Orleans, Louisiana.
-
-**Shuai, P.**, K. Myers, P. S. K. Knappett, M.B. Cardenas (2017) “Tidal and Seasonal River Stage Fluctuations Impact the Formation of Permeable Natural Reactive Barriers in Riverbank Sediments”, *Oral presentation at AGU Fall Meeting, New Orleans*, LA 
+**Shuai, P.**, K. Myers, P. S. K. Knappett, M.B. Cardenas (2017) “Tidal and Seasonal River Stage Fluctuations Impact the Formation of Permeable Natural Reactive Barriers in Riverbank Sediments”, *Oral presentation at AGU Fall Meeting*, New Orleans, LA 
 
 **Shuai, P.**, A. Hosain, P. S. K. Knappett, S. Hossain, M. B. Cardenas, K. Rhodes, K. M. Ahmed,(2016) “Estimating hydraulic properties of a river bank aquifer under tidal influence”, *Poster presentation at GSA Annual Meeting*, Denver, CO
 
-Knappett, P. S. K., S. Datta, N. Dimova, K. Myers, A. Hossain, M. Berube, **P. Shuai**, K. Rhodes, K. Jewell, M. Lipsi, S. Hossain, A. Hosain, J. Peterson, K. Ahmed, (2016) “Hydrological mechanism for arsenic deposits in Meghna River hyporheic zone sediments,” *Poster Presentation at EGU General Assembly 2016*, Vienna, Austria
-
-**Shuai, P.**, Hossain, A., Rhodes, K., Knappett, P. S. K., Dimova, N., Cardenas, M. B., Matin, K. R., Michael, H., Mozumder, R., van Geen, A. (2015) “Modeling arsenic mobilization in a riverbank aquifer under the influence of tidally fluctuating river and irrigation pumping,” *Poster Presentation at AGU Fall Meeting 2015*, San Francisco, CA
+**Shuai, P.**, Hossain, A., Rhodes, K., Knappett, P. S. K., Dimova, N., Cardenas, M. B., Matin, K. R., Michael, H., Mozumder, R., van Geen, A. (2015) “Modeling arsenic mobilization in a riverbank aquifer under the influence of tidally fluctuating river and irrigation pumping,” *Poster Presentation at AGU Fall Meeting*, San Francisco, CA
 
 # Projects Participation
 
@@ -143,11 +137,13 @@ Knappett, P. S. K., S. Datta, N. Dimova, K. Myers, A. Hossain, M. Berube, **P. S
 
 # Teaching Experience
 
-*Graduate Teaching Assistant*, Intro to Geochemistry (GEOL 453), Texas A&M University \hfill 2017
+*Guest Lecturer*, Hydrogeology (GEOL 410), Texas A&M University \hfill 2017
+
+*Graduate Teaching Assistant*, Introduction to Geochemistry (GEOL 453), Texas A&M University \hfill 2017
 
 *Graduate Teaching Assistant*, Hydrogeology (GEOL 410), Texas A&M University \hfill 2016
 
-*Graduate Teaching Assistant*, Physical Geology Lab (GEOL 104), Texas A&M University \hfill 2015
+*Graduate Teaching Assistant*, Physical Geology (GEOL 104), Texas A&M University \hfill 2015
 
 *Graduate Teaching Assistant*, Principals of Geology (GEOL 101), Texas A&M University \hfill 2014
 
@@ -177,15 +173,52 @@ International Association for Hydro-Environment Engineering and Research (IAHR),
 
 # Skills 
 
-*Programming*: Matlab••• Python•• R••  Shell•• C/C++• Fortran•
+<!-- \vspace{-10pt} -->
+<!-- \rule{\textwidth}{0.5pt}  -->
 
-*Software*: [PFLOTRAN](https://www.pflotran.org/)••• [COMSOL Multiphysics](https://www.comsol.com/)••• [MODFLOW](https://water.usgs.gov/ogw/modflow/)•• [HYDRUS 2D](https://www.pc-progress.com/en/Default.aspx?hydrus-3d)•• [ParaView](https://www.paraview.org/)•• [QGIS](https://www.qgis.org/en/site/)•• Adobe Illustrator••• Adobe Photoshop•• MS Office••• 
+\begin{tabular}{@{}ll}
+\textit{Programming} & Matlab, Python, R,  Shell, SQL, C/C++, Fortran\\
+\textit{Software} & \href{https://www.pflotran.org/}{PFLOTRAN}, \href{https://www.comsol.com/}{COMSOL Multiphysics}, \href{https://water.usgs.gov/ogw/modflow/}{MODFLOW}, \href{https://www.pc-progress.com/en/Default.aspx?hydrus-3d}{HYDRUS 2D}, \href{https://www.paraview.org/}{ParaView}, \href{https://www.qgis.org/en/site/}{QGIS}\\
+ & Adobe Illustrator, Adobe Photoshop, MS Office\\
+\textit{Lab/Field} & Ion Chromatography, Trimble RTX\\
+\textit{OS} & Windows, Unix\\
+\textit{Languages} & Chinese, English
+\end{tabular}
 
-*OS*: Windows••• Unix••
 
-*Languages*: Chinese••• English••
+<!-- *Programming*: Matlab••• Python•• R••  Shell•• SQL• C/C++• Fortran• -->
 
-•••Native/Proficient ••Professional/Experienced •Elementary
+<!-- *Software*: [PFLOTRAN](https://www.pflotran.org/)••• [COMSOL Multiphysics](https://www.comsol.com/)••• [MODFLOW](https://water.usgs.gov/ogw/modflow/)•• [HYDRUS 2D](https://www.pc-progress.com/en/Default.aspx?hydrus-3d)•• [ParaView](https://www.paraview.org/)•• [QGIS](https://www.qgis.org/en/site/)•• Adobe Illustrator••• Adobe Photoshop•• MS Office•••  -->
+
+<!-- *Lab/Field*: Ion Chromatography•• Trimble RTX••  -->
+
+<!-- *OS*: Windows••• Unix•• -->
+
+<!-- *Languages*: Chinese••• English•• -->
+
+<!-- •••Native/Proficient ••Professional/Experienced •Elementary -->
+
+<!-- \makebox[15ex]{Some text} -->
+
+<!-- *Programming*:\quad \cvskill{Matlab}{2}\hfill \cvskill{Python}{2}\hfill \cvskill{R}{2}\par \cvskill{Shell}{2}\hfill \cvskill{SQL}{1}\hfill \cvskill{C/C++}{1} -->
+
+<!-- *Languages*:\quad \cvskill{English}{3}\hfill \cvskill{Chinese}{3} -->
+
+<!-- \begin{tabular}{rl}  -->
+<!--     S& Isomeric state\\ -->
+<!--     Z& Atomic number\\ -->
+<!--     A& Atomic mass number -->
+<!-- \end{tabular} -->
+
+<!-- \begin{tabu} to 0.8\textwidth {X[l] X[c] X[c] X[r] } -->
+<!--  Programming & \cvskill{English}{3} & \cvskill{Chinese}{3} \\ -->
+<!--  item 21  & item 22  & item 23  \\ -->
+<!-- \end{tabu} -->
+
+<!-- $\circ$   -->
+
+<!-- \tikz\draw[black,fill=black] (0,0) circle (.3ex); \tikz\draw[black,fill=white] (0,0) circle (.3ex); -->
+
 
 <!-- *	Proficient with groundwater modeling software such as MODFLOW, HYDRUS, PFLOTRAN and COMSOL Multiphysics (a platform for physics-based modeling and simulation). -->
 
