@@ -20,6 +20,12 @@ conda create -n <my_env> python ipykernel r-essentials
 ```
 note: this will create both python and R kernels. You can create just R kernel using `conda create -n <my_env> r-essentials`
 
+- generate kernel spec file
+
+```bash
+python -m ipykernel install --user --name my_env --display-name MyEnv-jupyter
+```
+
 ### Duplicate NERSC environment
 
 Build identical conda environment from NERSC
