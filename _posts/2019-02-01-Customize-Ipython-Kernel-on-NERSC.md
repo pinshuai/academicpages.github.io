@@ -10,7 +10,7 @@ tags:
 This post is about customizing your kernel on [Jupyterhub](jupyter.nersc.gov). Here I will use `my_env` as my new environment name. Also see the documentation [here](https://docs.nersc.gov/services/jupyter/)
 
 ## Create a conda environment
-  Open terminal on [Jupyterhub](jupyter.nersc.gov) and follow the instructions on this [website](https://conda.io/docs/user-guide/tasks/manage-environments.html) to create new conda environment.
+  Open terminal on [Jupyterhub](jupyter.nersc.gov) and follow the instructions on this [website](https://conda.io/docs/user-guide/tasks/manage-environments.html) to create new conda environment. Alternatively, `ssh` into NERSC, load python `module load python`, then follow the steps to create conda environment.
 
 - In terminal, type `conda env list` to see a list of environments, the current environment is indicated with an asterisk(`*`). 
 
@@ -20,7 +20,7 @@ conda create -n <my_env> python ipykernel r-essentials
 ```
 note: this will create both python and R kernels. You can create just R kernel using `conda create -n <my_env> r-essentials`
 
-- generate kernel spec file
+- generate kernel spec file so that kernel can be found in Jupyter
 
 ```bash
 python -m ipykernel install --user --name my_env --display-name MyEnv-jupyter
