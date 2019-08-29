@@ -2,7 +2,7 @@
 
 ## Install Petsc
 
-Download Petsc from Bitbucket, and save it into directory `petsc_v3.10.2`, and checkout version 3.11.1.
+Download Petsc from Bitbucket, and save it into directory `petsc_v3.10.2`, or try another version 3.11.3.
 
 ```bash
 git clone https://bitbucket.org/petsc/petsc petsc_v3.10.2
