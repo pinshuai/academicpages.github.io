@@ -1,0 +1,14 @@
+---
+title: "Dam Operations and Subsurface Hydrogeology Control Dynamics of Hydrologic Exchange Flows in a Regulated River Reach"
+collection: publications
+permalink: /publication/2019-02-13-Dam-Control-on-HEFs
+date: 2019-02-13
+venue: '﻿Water Resources Research'
+paperurl: 'https://doi.org/10.1029/2018WR024193'
+citation: '﻿Shuai, P., Chen, X., Song, X., Hammond, G. E., Zachara, J., Royer, P., et al. (2019). Dam operations and subsurface hydrogeology control dynamics of hydrologic exchange flows in a Regulated River reach. Water Resources Research, 55. https://doi.org/ 10.1029/2018WR024193'
+---
+Abstract: Hydrologic exchange flows (HEFs) across the river‐aquifer interface have important implications for biogeochemical processes and contaminant plume migration in the river corridor, yet little is known about the hydrogeomorphic factors that control HEFs dynamics under dynamic flow conditions. Here, we developed a 3‐D numerical model for a large regulated river corridor along the Columbia River to study how HEFs are controlled by the interplays between dam‐regulated flow conditions and hydrogeomorphic features of such river corridor system. Our results revealed highly variable intra‐annual spatiotemporal patterns in HEFs along the 75‐km river reach, as well as strong interannual variability with larger exchange volumes in wet years than dry years. In general, the river was losing during late spring to early summer when the river stage was high, and river was gaining in fall and winter when river stage was low. The magnitude and timing of river stage fluctuations controlled the timing of high exchange rates. Both river channel geomorphology and the thickness of a highly permeable river bank geologic layer controlled the locations of exchange hot spots, while the latter played a dominant role. Dam‐induced, subdaily to daily river stage fluctuations drove high‐frequency variations in HEFs across the river‐aquifer interfaces, resulting in greater overall exchange volumes as compared to the case without high‐frequency flows. Our results demonstrated that upstream dam operations enhanced the exchange between river water and groundwater with strong potential influence on the associated biogeochemical processes and on the fate and transport of groundwater contaminant plumes in such river corridors.
+
+[Download paper here](https://doi.org/10.1029/2018WR024193)
+
+Recommended citation: ﻿Shuai, P., Chen, X., Song, X., Hammond, G. E., Zachara, J., Royer, P., et al. (2019). Dam operations and subsurface hydrogeology control dynamics of hydrologic exchange flows in a Regulated River reach. Water Resources Research, 55. https://doi.org/ 10.1029/2018WR024193
