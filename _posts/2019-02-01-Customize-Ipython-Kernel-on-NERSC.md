@@ -10,7 +10,15 @@ tags:
 This post is about customizing your kernel on [Jupyterhub](jupyter.nersc.gov). Here I will use `my_env` as my new environment name. Also see the documentation [here](https://docs.nersc.gov/services/jupyter/)
 
 ## Create a conda environment
-  Open terminal on [Jupyterhub](jupyter.nersc.gov) and follow the instructions on this [website](https://conda.io/docs/user-guide/tasks/manage-environments.html) to create new conda environment. Alternatively, `ssh` into NERSC, load python `module load python`, then follow the steps to create conda environment.
+  Open terminal on [Jupyterhub](jupyter.nersc.gov) and follow the instructions on this [website](https://conda.io/docs/user-guide/tasks/manage-environments.html) to create new conda environment. Alternatively, `ssh` into NERSC, load python,  then follow the steps to create conda environment.
+
+```bash
+module load python
+```
+
+
+
+ `module load python`
 
 - In terminal, type `conda env list` to see a list of environments, the current environment is indicated with an asterisk(`*`). 
 
@@ -44,7 +52,7 @@ conda create --name <my_env> --file spec-file.txt
 
 ## Install packages for Python
 
-  - First, activate your environment
+  - First, activate your environment (`conda activate <my_env>` does not work on NERSC due to restriction!)
 ```bash
 source activate <my_env>
 ```
@@ -64,12 +72,18 @@ source activate <my_env>
   (my_env) $ pip install shapely
 ```
 
+- Deactivate conda env
+
+```bash
+(my_env) $ conda deactivate
+```
+
 ## install packages for R
 
-- In the terminal, open `R` 
+- In the terminal, open `R` in your new conda env
 
   ```
-  $ R
+  (my_env) $ R
   ```
 
 - Install the package `plotly`

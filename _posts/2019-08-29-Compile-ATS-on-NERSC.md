@@ -178,6 +178,9 @@ salloc -N 1 -C haswell -q interactive -t 00:30:00 -L SCRATCH
 ```bash
 cd ats-demos/01_richards_steadystate
 ats --xml_file=./richards_steadystate.xml &> out.log
+
+# on NERSC
+srun -n 1 ats --xml_file=./richards_steadystate.xml 
 ```
 
 It should take less than a second to finish!

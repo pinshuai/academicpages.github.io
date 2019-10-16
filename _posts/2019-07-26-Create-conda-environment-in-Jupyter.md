@@ -1,4 +1,4 @@
-# Create conda environment in Jupyter
+# Conda environment in Jupyter
 
 This will show how to create customized conda environment on Mac.
 
@@ -38,12 +38,28 @@ In order for Jupyter to find your kernel, run following command and choose the k
 (my_env) $ python -m ipykernel install --user --name my_env --display-name MyEnv-jupyter
 ```
 
-## lauch Jupyter
+## launch Jupyter
 
 Lauch Jupyter lab and you should see you new kernel `my_env-jupyter` from the kernel dropdown.
 
 ```bash
 $ jupyter lab
+```
+
+
+
+# Export Conda env
+
+```bash
+# only the main packages are exported
+conda env export --from-history > environment.yml 
+
+conda env create -f environment.yml # the env name is included in the .yml file
+
+python -m ipykernel install --user --name widget --display-name widget
+
+jupyter labextension install @jupyter-widgets/jupyterlab-manager # enable widget
+
 ```
 
 
