@@ -26,7 +26,7 @@ define `PETSC_DIR` and `PETSC_ARCH`. You will see prompts when the configuration
 
 ```bash
 export PETSC_DIR=$PWD
-export PETSC_ARCH=arch-darwin-c-debug 
+export PETSC_ARCH=arch-darwin-c-release 
 ```
 
 ## Compile Petsc

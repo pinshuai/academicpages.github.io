@@ -1,4 +1,4 @@
-# Using Docker image on NERSC
+# Running Docker image on NERSC
 
 Shifter is developed at NERSC and is used to create image (e.g., Docker image) to run on NERSC due to the reserved root permission. This [documentation](https://docs.nersc.gov/programming/shifter/how-to-use/) shows the steps to use Shifter to download and run the image. And this [docomentation](https://docs.nersc.gov/services/jupyter/#shifter-kernels-on-jupyter) shows how to run image in Jupyter.
 
@@ -21,14 +21,20 @@ shifterimg images
 To run the image from Cori command line,
 
 ```bash
-shifter --image=ees16/tinerator:latest -e HOME=$HOME bash
+shifter --image=docker:ees16/tinerator:latest -e HOME=$HOME /bin/bash
 ```
 
 
 
 ## Run image on Jupyter
 
-### Create kernel spec file
+[doc](https://docs.nersc.gov/connect/jupyter/#shifter-kernels-on-jupyter)
+
+You do not need to create a new kernel for this. The new kernel name inside ``~/.local/share/jupyter/kernels` will be used. 
+
+In this case, it is called `shifter-jupyter`.
+
+### Create kernel spec file 
 
 - create kernel spec file `kernel.json` and put it under `~/.local/share/jupyter/kernels/shifter-jupyter/kernel.json`
 - Put the following in the `kernel.json` file
@@ -51,8 +57,6 @@ shifter --image=ees16/tinerator:latest -e HOME=$HOME bash
  "language": "python"
 }
 ```
-
-
 
 ### Mount volume
 

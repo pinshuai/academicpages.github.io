@@ -32,7 +32,7 @@ For compiling on cray system, the use of `cray-mpich` is recommended.
 module load cray-mpich
 ```
 
-You can also show the installation path using
+You can also show the installation path `MPICH_DIR` using
 
 ```bash
 module show cray-mpich
@@ -60,24 +60,18 @@ Currently Loaded Modulefiles:
 
 ### Set path
 
-Set up some directories for use later. 
-
-```bash
-vi ~/.bash_profile.ext
-```
-
 Put the following in the file. The `OPENMPI_DIR` is the same as `MPICH_DIR` from previous step. 
 
 ```bash
 # ----EDIT THESE!------#
 export ATS_BASE=$HOME/ats
-export ATS_BUILD_TYPE=Debug # or Release
+export ATS_BUILD_TYPE=Release # or Release
 export OPENMPI_DIR=/opt/cray/pe/mpt/7.7.6/gni/mpich-gnu/8.2
 # ---------------------#
 
-export ATS_SRC_DIR=${ATS_BASE}/repos/ats
-export ATS_BUILD_DIR=${ATS_BASE}/ats-build-${ATS_BUILD_TYPE}
-export ATS_DIR=${ATS_BASE}/ats-install-${ATS_BUILD_TYPE}
+export ATS_SRC_DIR=${ATS_BASE}/repos/ats-dev-transpiration
+export ATS_BUILD_DIR=${ATS_BASE}/ats-build-dev-trans-${ATS_BUILD_TYPE}
+export ATS_DIR=${ATS_BASE}/ats-install-dev-trans-${ATS_BUILD_TYPE}
 
 export AMANZI_SRC_DIR=${ATS_BASE}/repos/amanzi
 export AMANZI_BUILD_DIR=${ATS_BASE}/amanzi-build-${ATS_BUILD_TYPE}
@@ -87,12 +81,6 @@ export AMANZI_TPLS_BUILD_DIR=${ATS_BASE}/amanzi-tpls-build-${ATS_BUILD_TYPE}
 export AMANZI_TPLS_DIR=${ATS_BASE}/amanzi-tpls-install-${ATS_BUILD_TYPE}
 export PATH=${ATS_DIR}/bin:${AMANZI_TPLS_DIR}/bin:${PATH}
 export PYTHONPATH=${ATS_SRC_DIR}/tools/utils:${PYTHONPATH}
-```
-
-Put these in your bash profile (using `vi ~/.bash_profile.ext`), then do 
-
-```bash
-source ~/.bash_profile.ext
 ```
 
 ## Download and compile ATS
@@ -148,11 +136,44 @@ Save the changes in `bootstrap.sh`
 
 It will take 30 ~ 60 min... to complete.
 
-### configure ATS
+### Configure and install ATS
 
 ```bash
 . ${ATS_SRC_DIR}/configure-ats.sh
 ```
+
+## Update ATS
+
+If developer has pushed new commits to the repo, do the following to update ATS executable. 
+
+- update the current branch
+
+```bash
+cd ${ATS_SRC_DIR}
+git pull # if merge failed, you need to discard your local changes
+git checkout 28495efb62643e62376cc14a97968c0a6060ada3 # skip this step if for updating to the latest version
+
+# install ats
+./${ATS_SRC_DIR}/configure-ats.sh
+```
+
+- install a new branch
+
+```bash
+export ATS_SRC_DIR=${ATS_BASE}/repos/ats-dev-transpiration
+export ATS_BUILD_DIR=${ATS_BASE}/ats-build-dev-trans-${ATS_BUILD_TYPE}
+export ATS_DIR=${ATS_BASE}/ats-install-dev-trans-${ATS_BUILD_TYPE}
+
+git clone -b ats-pet-prms http://github.com/amanzi/ats $ATS_SRC_DIR
+
+git checkout 28495efb62643e62376cc14a97968c0a6060ada3 # checkout a commit tag
+
+# if amanzi version if the same, do 
+./${ATS_SRC_DIR}/configure-ats.sh
+# if not, a new amanzi version should be installed
+```
+
+
 
 ## Run testing problem
 
@@ -184,4 +205,79 @@ srun -n 1 ats --xml_file=./richards_steadystate.xml
 ```
 
 It should take less than a second to finish!
+
+
+
+# Running ATS on NERSC
+
+- Request interactive nodes and make sure `meshconvert` and `ats` is within your PATH.
+
+```bash
+~ $ which meshconvert
+/global/project/projectdirs/m1800/pin/ats/amanzi-tpls-install-Debug/bin/meshconvert
+~ $ which ats
+/global/project/projectdirs/m1800/pin/ats/ats-install-Debug/bin/ats
+```
+
+- partion mesh. 
+
+```bash
+srun -n 32 meshconvert --partition-method=2 mesh_rock_no_geologic.exo ./mesh_rock_no_geologic.par
+```
+
+- launch job
+
+```bash
+srun -n 32 ats --xml_file=./spinup-soil.xml 
+```
+
+
+
+# Install ATS on Linux
+
+Follow the exact steps of [ATS Installation Guide](https://github.com/amanzi/ats/blob/master/INSTALL.md). 
+
+```bash
+# install cmake
+
+# install MPI
+sudo apt-get install libopenmpi-dev openmpi-bin
+
+# install Lapack
+sudo apt-get install libblas-dev liblapack-dev
+
+# EDIT THESE!
+export ATS_BASE=/my/path/to/all/things/ats
+export ATS_BUILD_TYPE=Release
+# END EDIT THESE!
+
+export ATS_SRC_DIR=${ATS_BASE}/repos/ats
+export ATS_BUILD_DIR=${ATS_BASE}/ats-build-${ATS_BUILD_TYPE}
+export ATS_DIR=${ATS_BASE}/ats-install-${ATS_BUILD_TYPE}
+
+export AMANZI_SRC_DIR=${ATS_BASE}/repos/amanzi
+export AMANZI_BUILD_DIR=${ATS_BASE}/amanzi-build-${ATS_BUILD_TYPE}
+export AMANZI_DIR=${ATS_BASE}/amanzi-install-${ATS_BUILD_TYPE}
+
+export AMANZI_TPLS_BUILD_DIR=${ATS_BASE}/amanzi-tpls-build-${ATS_BUILD_TYPE}
+export AMANZI_TPLS_DIR=${ATS_BASE}/amanzi-tpls-install-${ATS_BUILD_TYPE}
+export PATH=${ATS_DIR}/bin:${AMANZI_TPLS_DIR}/bin:${PATH}
+export PYTHONPATH=${ATS_SRC_DIR}/tools/utils:${PYTHONPATH}
+
+mkdir -p ${ATS_BASE}
+cd ${ATS_BASE}
+
+# clone amanzi
+git clone -b amanzi-0.88 http://github.com/amanzi/amanzi $AMANZI_SRC_DIR
+
+# clone ats
+git clone -b ats-0.88 http://github.com/amanzi/ats $ATS_SRC_DIR
+
+# run bootstrap
+. ${ATS_SRC_DIR}/amanzi_bootstrap.sh
+
+# config ats
+. ${ATS_SRC_DIR}/configure-ats.sh
+
+```
 

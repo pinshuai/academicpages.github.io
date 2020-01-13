@@ -35,7 +35,7 @@ Note, port number `8888` is the default one that Jupyter uses, but you can chang
 In your local machine, using `ssh` and the following to forward port. You will be prompted to enter your password you used to log into remote server.
 
 ```bash
-$ ssh -N -f -L localhost:8889:localhost:8888 usrname@pinklady.pnl.gov
+$ ssh -N -f -L localhost:8889:localhost:8888 shua784@pinklady.pnl.gov
 shua784@pinklady.pnl.gov's password: 
 ```
 

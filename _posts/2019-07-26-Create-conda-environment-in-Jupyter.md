@@ -55,7 +55,7 @@ $ jupyter lab
 conda env export --from-history > environment.yml 
 
 conda env create -f environment.yml # the env name is included in the .yml file
-
+conda activate widget
 python -m ipykernel install --user --name widget --display-name widget
 
 jupyter labextension install @jupyter-widgets/jupyterlab-manager # enable widget
