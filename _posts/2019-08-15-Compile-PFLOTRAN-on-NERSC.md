@@ -97,10 +97,10 @@ make all
 ```bash
 git clone https://bitbucket.org/pflotran/pflotran pflotran
 cd pflotran/src/pflotran
-make -j 4 pflotran # use parallel thread to compile?
+make -j4 pflotran # use parallel thread to compile?
 ```
 
-after compilation is complete, a new file named `pflotran*` executable is generated. 
+after compilation is complete, a new file named `pflotran*` executable is generated at current directory. You can also move this executable to another directory, e.g. ` pflotran/src/pflotran/bin/pflotran*`, then you can export this directory to `PATH`.
 
 ## regression test
 
