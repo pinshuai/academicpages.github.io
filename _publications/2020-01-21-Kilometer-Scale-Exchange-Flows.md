@@ -1,0 +1,14 @@
+---
+title: "Kilometer‐Scale Hydrologic Exchange Flows in a Gravel Bed River Corridor and Their Implications to Solute Migration"
+collection: publications
+permalink: /publication/2020-01-21-Kilometer-Scale-Exchange-Flows
+date: 2020-01-21
+venue: '﻿Water Resources Research'
+paperurl: 'https://doi.org/10.1029/2019WR025258'
+citation: 'Zachara J., X. Chen, X. Song, P. Shuai, C. Murray, C. Resch. (2020). Kilometer-scale hydrologic exchange flows in a river corridor and their implications to solute migration. Water Resources Research. https://doi.org/10.1029/2019WR025258'
+---
+Abstract: A well‐characterized field site along a major, gravel bed river corridor was used to investigate the dynamic pathways and impacts of subsurface hydrogeologic structure on kilometer‐scale hydrologic exchange flows between river water and groundwater. An aqueous uranium (Uaq) plume exists within a hyporheic alluvial aquifer at the site that discharges to the Columbia River. We performed temporally intensive monitoring of specific conductance (SpC) and Uaq concentrations within the plume for a 2‐year period at varying distances from the river shoreline, both within and outside a presumed subsurface pathway of lateral hydrologic exchange. SpC and Uaq were utilized as in situ tracers of hydrologic exchange and associated groundwater‐surface water mixing. Seasonal river stage variations by more than 2 m caused distinct events of river water intrusion and retreat from the nearshore, hyporheic alluvial aquifer, resulting in highly dynamic SpC and Uaq patterns in monitoring wells. Simulations of hydrologic exchange and mixing were performed with PFLOTRAN to understand the observed SpC and Uaq behaviors linked to predominant flow directions and velocities in the river corridor as influenced by river stage dynamics and variable aquitard topography. By coupling robust monitoring with numerical flow and transport modeling, we demonstrate complicated multidirectional flow behaviors at the kilometer scale that strongly influenced plume dynamics. Therefore, hyporheic aquifer must be frequently monitored under different flow conditions if water quality is of concern. The resulting hydrologic understanding enables improved interpretation of hydrogeochemical data from this site and other large gravel bed river corridors in the United States and elsewhere.
+
+[Download paper here](https://doi.org/10.1029/2019WR025258)
+
+Recommended citation: Zachara J., X. Chen, X. Song, P. Shuai, C. Murray, C. Resch. (2020). Kilometer-scale hydrologic exchange flows in a river corridor and their implications to solute migration. Water Resources Research. https://doi.org/10.1029/2019WR025258
