@@ -65,7 +65,7 @@ Put the following in the file. The `OPENMPI_DIR` is the same as `MPICH_DIR` from
 ```bash
 # ----EDIT THESE!------#
 export ATS_BASE=$HOME/ats
-export ATS_BUILD_TYPE=Release # or Release
+export ATS_BUILD_TYPE=Release # or Debug
 export OPENMPI_DIR=/opt/cray/pe/mpt/7.7.6/gni/mpich-gnu/8.2
 # ---------------------#
 

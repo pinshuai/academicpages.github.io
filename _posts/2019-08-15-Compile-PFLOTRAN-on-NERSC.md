@@ -12,7 +12,7 @@ cd petsc_v3.11.3
 git checkout v3.11.3
 ```
 
-Set current dir as `PETSC_DIR`
+Set current dir as `PETSC_DIR`, define `--PETSC_ARCH` to any name, and a subdir with the same name will be created within eg.`./petsc_v3.11.3/cori_haswell_intel_19_0_3`
 
 ```bash
 export PETSC_DIR=$PWD
@@ -33,45 +33,63 @@ export PETSC_ARCH=cori_haswell_intel_19_0_3
   module swap craype-haswell craype-mic-knl
   ```
 
-  
+
+### Load other modules
+
+```bash
+module load PrgEnv-intel
+module swap cray-mpich cray-mpich        # yes, swap it
+module load cray-hdf5-parallel
+module load cmake
+module load python # 2.7 or 3.7?
+module unload darshan
+```
 
 ## configure petsc
 
-- Load python module
+- use system installed hdf5 (recommended)
 
 ```bash
-module load python/2.7-anaconda-2019.07
+./config/configure.py --with-cc=cc --with-cxx=CC --with-fc=ftn --CFLAGS='-fast -no-ipo' --CXXFLAGS='-fast -no-ipo' --FFLAGS='-fast -no-ipo' --with-shared-libraries=0 --with-debugging=0 --with-clanguage=c --PETSC_ARCH=$PETSC_ARCH --download-parmetis=1 --download-metis=1 --with-hdf5=1 --with-c2html=0 --download-mumps=1 --download-scalapack=1 --with-clib-autodetect=0 --with-fortranlib-autodetect=0 --with-cxxlib-autodetect=0 --LIBS=-lstdc++
 ```
 
-- Use the following command to configure petsc.
+- Use the following command to configure petsc (download hdf5).
 
 ```bash
-./config/configure.py --with-cc=cc --with-cxx=CC --with-fc=ftn --CFLAGS='-fast -no-ipo' --CXXFLAGS='-fast -no-ipo' --FFLAGS='-fast -no-ipo' --with-shared-libraries=0 --with-debugging=1 --with-clanguage=c --PETSC_ARCH=$PETSC_ARCH --download-parmetis=1 --download-metis=1 --download-hdf5=1 --with-c2html=0 --with-clib-autodetect=0 --with-fortranlib-autodetect=0 --with-cxxlib-autodetect=0 --LIBS=-lstdc++
+./config/configure.py --with-cc=cc --with-cxx=CC --with-fc=ftn --CFLAGS='-fast -no-ipo' --CXXFLAGS='-fast -no-ipo' --FFLAGS='-fast -no-ipo' --with-shared-libraries=0 --with-debugging=0 --with-clanguage=c --PETSC_ARCH=$PETSC_ARCH --download-parmetis=1 --download-metis=1 --download-hdf5=1 --with-c2html=0 --with-clib-autodetect=0 --with-fortranlib-autodetect=0 --with-cxxlib-autodetect=0 --LIBS=-lstdc++
 ```
 
-note: you can define `--PETSC_ARCH` to any name, and a subdir with the same name will be created within `./petsc_v3.11.3/cori_haswell_intel_19_0_3`
-
-- use system installed hdf5 (optional)
+- Glenn's modified version for new Cori sys
 
 ```bash
-module load cray-hdf5-parallel
-
-./config/configure.py --with-cc=cc --with-cxx=CC --with-fc=ftn --CFLAGS='-fast -no-ipo' --CXXFLAGS='-fast -no-ipo' --FFLAGS='-fast -no-ipo' --with-shared-libraries=0 --with-debugging=1 --with-clanguage=c --PETSC_ARCH=$PETSC_ARCH --download-parmetis=1 --download-metis=1 --with-hdf5=1 --with-c2html=0 --with-clib-autodetect=0 --with-fortranlib-autodetect=0 --with-cxxlib-autodetect=0 --LIBS=-lstdc++
+./config/configure.py \
+PETSC_ARCH=cori_intel_19_0_3 \
+--with-language=c \
+--with-cc=cc --with-cxx=CC --with-fc=ftn \
+COPTFLAGS='-g -O3 -fp-model fast' CXXOPTFLAGS='-g -O3 -fp-model fast' FOPTFLAGS='-g -O3 -fp-model fast' \
+--download-hypre=1 --download-metis=1 --download-parmetis=1 --download-mumps=1 --download-scalapack=1 \
+--with-hdf5=1 \
+--with-debugging=0 \
+--with-shared-libraries=0
 ```
 
 - example of currently loaded modules on `haswell ` node
 
 ```bash
 Currently Loaded Modulefiles:
-  1) modules/3.2.11.1                                 10) dmapp/7.1.1-7.0.0.1_5.26__g25e5077.ari           19) craype-haswell
-  2) nsg/1.2.0                                        11) gni-headers/5.0.12.0-7.0.0.1_7.41__g3b1768f.ari  20) cray-mpich/7.7.6
-  3) intel/19.0.3.199                                 12) xpmem/2.2.17-7.0.0.1_3.25__g7acee3a.ari          21) craype-hugepages2M
-  4) craype-network-aries                             13) job/2.2.4-7.0.0.1_3.34__g36b56f4.ari             22) altd/2.0
-  5) craype/2.5.18                                    14) dvs/2.11_2.2.140-7.0.0.1_13.1__gdf9ebba2         23) darshan/3.1.7
-  6) cray-libsci/19.02.1                              15) alps/6.6.50-7.0.0.1_3.41__g962f7108.ari          24) gcc/8.2.0
-  7) udreg/2.3.2-7.0.0.1_4.28__g8175d3d.ari           16) rca/2.2.20-7.0.0.1_4.39__g8e3fb5b.ari            25) cmake/3.14.4
-  8) ugni/6.0.14.0-7.0.0.1_7.32__ge78e5b0.ari         17) atp/2.1.3                                        26) python/2.7-anaconda-2019.07
-  9) pmi/5.0.14                                       18) PrgEnv-intel/6.0.5                               27) cray-hdf5-parallel/1.10.2.0
+  1) modules/3.2.11.4                                 14) job/2.2.4-7.0.1.1_3.29__g36b56f4.ari
+  2) nsg/1.2.0                                        15) dvs/2.12_2.2.151-7.0.1.1_5.29__g7eb5e703
+  3) altd/2.0                                         16) alps/6.6.57-7.0.1.1_5.1__g1b735148.ari
+  4) intel/19.0.3.199                                 17) rca/2.2.20-7.0.1.1_4.33__g8e3fb5b.ari
+  5) craype-network-aries                             18) atp/2.1.3
+  6) craype/2.6.2                                     19) PrgEnv-intel/6.0.5
+  7) cray-libsci/19.06.1                              20) craype-haswell
+  8) udreg/2.3.2-7.0.1.1_3.24__g8175d3d.ari           21) cray-mpich/7.7.10
+  9) ugni/6.0.14.0-7.0.1.1_7.27__ge78e5b0.ari         22) craype-hugepages2M
+ 10) pmi/5.0.14                                       23) cray-hdf5-parallel/1.10.5.2
+ 11) dmapp/7.1.1-7.0.1.1_4.36__g38cf134.ari           24) cmake/3.14.4
+ 12) gni-headers/5.0.12.0-7.0.1.1_6.24__g3b1768f.ari  25) python/2.7-anaconda-2019.07
+ 13) xpmem/2.2.20-7.0.1.1_4.5__g0475745.ari
 ```
 
 
@@ -90,6 +108,8 @@ xxx=========================================================================xxx
 ```bash
 cd $PETSC_DIR
 make all
+# or
+# make PETSC_DIR=/global/project/projectdirs/m1800/pin/petsc_v3.11.1 PETSC_ARCH=cori_haswell_intel_19_0_3 all
 ```
 
 ## download and compile pflotran
@@ -97,10 +117,18 @@ make all
 ```bash
 git clone https://bitbucket.org/pflotran/pflotran pflotran
 cd pflotran/src/pflotran
-make -j4 pflotran # use parallel thread to compile?
+make -j4 pflotran # use parallel thread to compile? You can also try -j8, -j16... if more cores are available
 ```
 
 after compilation is complete, a new file named `pflotran*` executable is generated at current directory. You can also move this executable to another directory, e.g. ` pflotran/src/pflotran/bin/pflotran*`, then you can export this directory to `PATH`.
+
+### fast compilation	
+
+Caution! This works if only a small change is made because the compilation will not rebuild all the dependencies.
+
+```bash
+make pflotran fast=1
+```
 
 ## regression test
 
@@ -119,3 +147,45 @@ srun -n 1 $PFLOTRAN_EXE -pflotranin 543_flow.in # need to use one core to run th
 ```
 
 Within seconds, the test model should finish, and the installation processes are done!
+
+## Realization dependent
+
+PFLOTRAN supports running multiple realizations at once. Must have realization dependent dataset.
+
+- run single realization
+
+```bash
+srun -n 32 pflotran pflotran.in -realization_id 1
+```
+
+- run all realization
+
+```bash
+srun -n 128 pflotran pflotran.in -stochastic -num_realizations 4 -num_groups 4
+```
+
+Note: `# of realizations per groups` equals `num_realizations/num_groups`; `# of cores per simulation = # of cores/num_groups`; in this case, 32 cores are used for one realization.
+
+## Update PFLOTRAN
+
+-  make sure `PETSC_DIR` and `PETSC_ARCH` are in your environment
+
+```bash
+export PETSC_DIR=$PWD
+export PETSC_ARCH=cori_haswell_intel_19_0_3
+```
+
+- Pull the changes from remote repo
+
+```bash
+git pull 
+```
+
+- Recompile PFLOTRAN
+
+```bash
+cd pflotran/src/pflotran
+make -j4 pflotran
+# make pflotran fast=1
+```
+

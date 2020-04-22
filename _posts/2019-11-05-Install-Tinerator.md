@@ -134,6 +134,7 @@ Every time when developer made a new commit, do the following to update Tinerato
 ```bash
 source activate tin
 (tin) $ cd $TINERATOR_SRC_DIR
+(tin) $ git pull
 (tin) $ python setup.py install
 ```
 
