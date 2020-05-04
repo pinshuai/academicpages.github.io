@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Pin Shuai, PhD"
 title_separator          : "-"
 name                     : &name "Pin Shuai"
-description              : &description "Post doctorate at PNNL"
+description              : &description "Earth Scientist @PNNL"
 url                      : https://pinshuai.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "pinshuai.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Pin Shuai"
   avatar           : "profile.jpg"
-  bio              : "Post doctorate at PNNL"
+  bio              : "Earth Scientist @PNNL"
   location         : "Richland, WA"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=Md_6je0AAAAJ&hl=en"

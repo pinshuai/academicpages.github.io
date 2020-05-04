@@ -10,4 +10,3 @@ The list compiles some of the most well known hydrogeology textbooks. Also see p
 6. *Applied Contaminant Transport Modeling* (2nd ed), by Bennett and Zheng, 2002
 7. *Groundwater Geochemistry (2nd Ed)*, by Broder Jr and Britta, 2005
 8. *Geochemistry, Groundwater and Pollution (2nd Ed)*, by Appelo and Postma, 1993
-9. 

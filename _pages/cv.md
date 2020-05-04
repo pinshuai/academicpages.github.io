@@ -23,6 +23,7 @@ Education
 
 Work Experience
 ======
+* Earth Scientist, Pacific Northwest National Laboratory, 2020-present
 * Post Doctorate Research Associate, Pacific Northwest National Laboratory, 2017-present
 * Graduate RA/TA, Texas A&M University, 2013-2017
 * Summer Intern, Pacific Northwest National Laboratory, 2016
@@ -37,10 +38,10 @@ Skills
 ======
 **Programming**:  Python••• R••  Matlab•• Shell•• C/C++• Fortran•
 
-**Software**: [PFLOTRAN](https://www.pflotran.org/)••• [COMSOL Multiphysics](https://www.comsol.com/)••• [MODFLOW](https://water.usgs.gov/ogw/modflow/)•• [HYDRUS 2D](https://www.pc-progress.com/en/Default.aspx?hydrus-3d)•• [ParaView](https://www.paraview.org/)•• [QGIS](https://www.qgis.org/en/site/)•• Adobe Illustrator••• Adobe Photoshop•• MS Office••• 
+**Software**: [PFLOTRAN](https://www.pflotran.org/)••• [COMSOL Multiphysics](https://www.comsol.com/)••• [MODFLOW](https://water.usgs.gov/ogw/modflow/)•• [ATS](https://github.com/amanzi/ats)•• [HYDRUS 2D](https://www.pc-progress.com/en/Default.aspx?hydrus-3d)•• [ParaView](https://www.paraview.org/)•• [QGIS](https://www.qgis.org/en/site/)•• Adobe Illustrator••• Adobe Photoshop•• MS Office••• 
 
 **OS**: Windows••• Unix••
 
-**Languages**: Chinese••• English••
+**Languages**: English••• Chinese•••
 
 •••Native/Proficient ••Professional/Experienced •Elementary

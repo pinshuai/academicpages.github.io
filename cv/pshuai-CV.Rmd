@@ -8,7 +8,7 @@ geometry: margin=1in
 title: "CV"
 author: Pin Shuai
 
-jobtitle: "Post Doctorate Research Associate"
+jobtitle: "Earth Scientist"
 address: "Pacific Northwest National Laboratory · 902 Battelle Blvd, Richland, WA 99354"
 fontawesome: yes
 email: pin.shuai@pnnl.gov
@@ -43,7 +43,11 @@ Advisors: Dr. Peter Knappett and Dr. M. Bayani Cardenas (University of Texas, Au
 
 *Wuhan University (China)*, B.S. Water Resources Engineering \hfill 2011
 
-# Research Experience
+# Professional Appointments
+
+*Earth Scientist, Watershed & Ecosystem Science* \hfill 2020 - present
+
+Pacific Northwest National Laboratory, Richland, Washington
 
 *Post Doctorate Research Associate, Advanced Study & Development Group* \hfill 2017 - present
 
@@ -95,7 +99,7 @@ Also see my [Google Scholar](https://scholar.google.com/citations?user=Md_6je0AA
 
 [2] Song X., X. Chen, J.M. Zachara, J. Gomez-Velez, **P. Shuai**, H. Ren, and G. Hammond. (2019). Dynamic River Stage Variations Lead to Multimodal Residence Time Distributions of Hydrological Exchange Flow. (*Under review at Water Resources Research*)
 
-[1] Chen K., X. Chen, X. Song, G. Hammond, H. Zhan, **P. Shuai**, and J. M. Zachara. (2019). Using Ensemble Data Assimilation to Estimate Transient Hydrologic Exchange Fluxes under Highly Dynamic Flow Conditions. (*Under review at Water Resources Research*)
+[1] Chen K., X. Chen, X. Song, G. Hammond, H. Zhan, **P. Shuai**, and J. M. Zachara. (2019). Using Ensemble Data Assimilation to Estimate Transient Hydrologic Exchange Fluxes under Highly Dynamic Flow Conditions. (*In prep*)
 
 
 
@@ -105,11 +109,13 @@ Also see my [Google Scholar](https://scholar.google.com/citations?user=Md_6je0AA
 
 ## Invited Talks
 
-**Shuai P.**. (2019). "Hydrologic Exchange Flows and Thermal Regimes in the Hanford Reach: The Effects of Dam Operations, River Morphology and Subsurface Hydrogeology". *Seminar at Washington State University Tri-Cities*, Richland, Washington, United States.
+**Shuai P.**. (2020). "Hydrogeologic and Geomorphic Controls on Hydrologic Exchange Flows and River Corridor Thermal Regimes in the Hanford Reach of the Columbia River". *Lunchtime seminar at USGS ORWSC*, Feb. 25, 2020. Portland, Oregon, United States.
 
-**Shuai P.**. (2019). "Hydrologic Exchange Flows Control on Temperature Regime and Ecological Impacts". *SFA Community Watershed Workshop at PNNL*, Richland, Washington, United States.
+**Shuai P.**. (2019). "Hydrologic Exchange Flows and Thermal Regimes in the Hanford Reach: The Effects of Dam Operations, River Morphology and Subsurface Hydrogeology". *Seminar at Washington State University Tri-Cities*, Oct. 25, 2019. Richland, Washington, United States.
 
-**Shuai P.**. (2019). "Simulating flow and heat transport in a large regulated river corridor". *Workshop on Critical Timescales of Hydrologic Transport at University of California, Berkeley*, Berkeley, California, United States.
+**Shuai P.**. (2019). "Hydrologic Exchange Flows Control on Temperature Regime and Ecological Impacts". *SFA Community Watershed Workshop at PNNL*, Sep. 11-12, 2019. Richland, Washington, United States.
+
+**Shuai P.**. (2019). "Simulating flow and heat transport in a large regulated river corridor". *Workshop on Critical Timescales of Hydrologic Transport at University of California, Berkeley*, May 22-24, 2019. Berkeley, California, United States.
 
 ## Conference Presentations
 
@@ -193,7 +199,7 @@ International Association for Hydro-Environment Engineering and Research (IAHR),
 
 *Manuscript reviewer* for Water Resources Research (2), Journal of Hydrology (1)
 
-*Student judge* for Outstanding Student Presentation Awards at AGU Anual Meeting 2018
+*Student judge* for Outstanding Student Presentation Awards at AGU Anual Meeting (2018-2019)
 
 # Skills
 
