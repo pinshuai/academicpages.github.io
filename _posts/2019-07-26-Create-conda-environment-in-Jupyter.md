@@ -32,7 +32,7 @@ Or using `pip`
 
 ## create kernel spec file
 
-In order for Jupyter to find your kernel, run following command and choose the kernel name (i.e., `my_env-jupyter`)
+In order for Jupyter to find your kernel, run following command and choose the kernel name (i.e., `MyEnv-jupyter`)
 
 ```bash
 (my_env) $ python -m ipykernel install --user --name my_env --display-name MyEnv-jupyter
@@ -44,6 +44,26 @@ Lauch Jupyter lab and you should see you new kernel `my_env-jupyter` from the ke
 
 ```bash
 $ jupyter lab
+```
+
+## remove a jupyter kernel
+
+```bash
+#check available kernels
+jupyter kernelspec list
+# remove selected kernel
+jupyter kernelspec uninstall unwanted-kernel
+```
+
+
+
+###  Install Jupyterlab extentions
+
+```bash
+#check installed server extension
+jupyter serverextension list
+# install selected extention
+conda install -c conda-forge jupyterlab-git
 ```
 
 

@@ -5,6 +5,7 @@ The steps follows this [documentation](https://raw.githack.com/lanl/LaGriT/tiner
 - create conda env and install packages. A list of packages can be loaded using `requirements.txt`
 
 ```bash
+# on NERSC
 module load python
 
 # make conda-forge channel the priority
@@ -80,7 +81,7 @@ module swap PrgEnv-intel PrgEnv-gnu
 
 
 
-####Building exodus
+#### Building exodus
 
 ```bash
 cd LaGriT
@@ -88,14 +89,14 @@ export LAGRIT_DIR=$PWD
 make exodus
 ```
 
-####compile LaGriT
+#### compile LaGriT
 
 ```bash
 # make [option] [target], follow the prompt from previous step
 make EXO_LIB_DIR=/Users/shua784/Dropbox/github/LaGriT/seacas/lib static 
 ```
 
-####testing 
+#### testing 
 
 ```bash
 make test
@@ -142,7 +143,7 @@ source activate tin
 
 # Issues
 
-1. libpoppler.so.76: cannot open shared object file: No such file or directory
+1. *libpoppler.so.76: cannot open shared object file: No such file or directory*
   - This is likely caused by inconsistent package version between `default` and `conda-forge` channel. Try install packages using `conda-forge` channel. 
 ```bash
 conda config --add channels conda-forge
@@ -158,7 +159,7 @@ channels:
 channel_priority: strict
 ```
 
-2. LaGriT executable is not defined. Pylagrit could not find the executable defined in `.pylagritrc`
+2. For docker use. *LaGriT executable is not defined.* Pylagrit could not find the executable defined in `.pylagritrc`
 
   - temporary hack: open `LaGriT/PyLaGriT/pylagrit/pylagrit.py`, replace the following:
 ```python
@@ -167,7 +168,7 @@ channel_priority: strict
 self.lagrit_exe = '/Users/shua784/Dropbox/github/LaGriT/src/lagrit'
 ```
 
-3. Interactive widget did not show up
+3. *Interactive widget did not show up*
 
    - install `nodejs`
    - enable extension

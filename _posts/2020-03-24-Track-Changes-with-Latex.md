@@ -56,7 +56,7 @@ Note source code on [Gitlab](https://gitlab.com/git-latexdiff/git-latexdiff), an
 $ git clone https://gitlab.com/git-latexdiff/git-latexdiff.git
 $ sudo make install
 
-# if installation failed, do manual install
+# if installation failed, do manual installation to move `git-latexdiff` into one of the PATH folder
 $ cp git-latexdiff /usr/local/bin/.
 ```
 
@@ -73,6 +73,7 @@ git latexdiff --main manuscript.tex c0b1428d8dc81dbe12bf28b17e83382df31c4200 HEA
 
 ## caveats
 
+- `git latexdiff` sometimes could not render the citation correctly, need to switch to `latexdiff` 
 - `latexdiff` does not recognise the changes in figure if figure name is the same. Also it does not show the old vs new figure even if you have changed the name of the figure. It will just show the new figure in the `diff.tex`.
 - If you use bibtex, it is recommended to include the `.bbl` file in the version management.
 
@@ -87,6 +88,8 @@ $ bibtex manuscript # Do not add ".bib" extension
 $ pdflatex manuscript #
 $ pdflatex manuscript # yes, run twice to get the bib reference correctly rendered
 ```
+
+For `git latexdiff`, try include `.bbl` file in git push? Otherwise the citation won't render.
 
 ### having external .tex file such as SupportingInformation.tex?
 

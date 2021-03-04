@@ -21,7 +21,7 @@ cd existing_repo
 git remote rename origin old-origin
 git remote add origin https://gitlab.pnnl.gov/sbrsfa/test.git
 git push -u origin --all
-git push -u origin --tags
+git push -u origin --tags # optional?
 ```
 
 - Follow the command line instructions and you are all set.

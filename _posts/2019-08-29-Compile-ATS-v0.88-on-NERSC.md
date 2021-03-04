@@ -1,6 +1,6 @@
-# compile ATS on NERSC
+#  Compile ATS (v0.88) on NERSC
 
-The instruction follows this [ATS Installation Guide](https://github.com/amanzi/ats/blob/master/INSTALL.md) with a few changes for compilation on NERSC Cori environment. To get some background on compiling codes on NERSC, see this [tutorial](https://www.nersc.gov/users/computational-systems/cori/programming/compiling-codes-on-cori/) on NERSC website.
+The instruction follows this [ATS Installation Guide](https://github.com/amanzi/ats/blob/ats-0.88/INSTALL.md) with a few changes for compilation on NERSC Cori environment. To get some background on compiling codes on NERSC, see this [tutorial](https://www.nersc.gov/users/computational-systems/cori/programming/compiling-codes-on-cori/) on NERSC website.
 
 ## Pre-requirements
 
@@ -11,6 +11,8 @@ The default environment on NERSC is `PrgEnv-intel`, and you need to switch to `P
 ```bash
 module swap PrgEnv-intel PrgEnv-gnu
 ```
+
+Note: this will also automatically load `gcc/8.3.0`
 
 ### Load `cmake`
 
@@ -168,7 +170,7 @@ git clone -b ats-pet-prms http://github.com/amanzi/ats $ATS_SRC_DIR
 
 git checkout 28495efb62643e62376cc14a97968c0a6060ada3 # checkout a commit tag
 
-# if amanzi version if the same, do 
+# if amanzi version is the same, do 
 ./${ATS_SRC_DIR}/configure-ats.sh
 # if not, a new amanzi version should be installed
 ```
@@ -188,12 +190,6 @@ git clone -b ats-demos-0.88 http://github.com/amanzi/ats-demos
 
 ### Run a test
 
-- first request some interactive node
-
-```bash
-salloc -N 1 -C haswell -q interactive -t 00:30:00 -L SCRATCH
-```
-
 - then run the test problem
 
 ```bash
@@ -210,7 +206,29 @@ It should take less than a second to finish!
 
 # Running ATS on NERSC
 
-- Request interactive nodes and make sure `meshconvert` and `ats` is within your PATH.
+- (optional) if using ATS from IDEAS repo
+
+```bash
+export IDEAS_HOME=/project/projectdirs/m2398/ideas
+source ${IDEAS_HOME}/tools/init/ideas.bashrc
+
+# do one of the following to load ATS exe.
+module load ATS/dev-transpiration/basic/Release/PrgEnv-gnu-6.0.5
+#ATS/0.88/basic/Debug/PrgEnv-gnu-6.0.5
+#ATS/0.88/basic/Release/PrgEnv-gnu-6.0.5
+#ATS/dev-transpiration/basic/Debug/PrgEnv-gnu-6.0.5
+#ATS/dev-transpiration/basic/Release/PrgEnv-gnu-6.0.5
+#ATS/dev/basic/Debug/#PrgEnv-gnu-6.0.5#
+#ATS/dev/basic/Debug/PrgEnv-gnu-6.0.5
+```
+
+- first request some interactive node (**important**)
+
+```bash
+salloc -N 1 -C haswell -q interactive -t 00:30:00 -L SCRATCH
+```
+
+- make sure `meshconvert` and `ats` is within your PATH
 
 ```bash
 ~ $ which meshconvert
@@ -219,9 +237,11 @@ It should take less than a second to finish!
 /global/project/projectdirs/m1800/pin/ats/ats-install-Debug/bin/ats
 ```
 
-- partion mesh. 
+- partion mesh based on num of cores. 
 
 ```bash
+# partition-method: 0 (default metis) 1 (default zoltan) 2 (zoltan partition in map view)
+
 srun -n 32 meshconvert --partition-method=2 mesh_rock_no_geologic.exo ./mesh_rock_no_geologic.par
 ```
 
@@ -235,7 +255,7 @@ srun -n 32 ats --xml_file=./spinup-soil.xml
 
 # Install ATS on Linux
 
-Follow the exact steps of [ATS Installation Guide](https://github.com/amanzi/ats/blob/master/INSTALL.md). 
+Follow the exact steps of [ATS Installation Guide](https://github.com/amanzi/amanzi/blob/master/INSTALL_ATS.md). 
 
 ```bash
 # install cmake
@@ -280,4 +300,8 @@ git clone -b ats-0.88 http://github.com/amanzi/ats $ATS_SRC_DIR
 . ${ATS_SRC_DIR}/configure-ats.sh
 
 ```
+
+
+
+
 

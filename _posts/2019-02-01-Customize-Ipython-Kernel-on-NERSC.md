@@ -1,5 +1,5 @@
 ---
-title: 'Customize Ipython Kernel on NERSC'
+condatitle: 'Customize Ipython Kernel on NERSC'
 date: 2019-02-01
 permalink: /posts/2019/02/Customize-Ipython-Kernel-on-NERSC/
 tags:

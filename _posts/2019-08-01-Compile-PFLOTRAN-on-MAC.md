@@ -16,18 +16,20 @@ git checkout v3.11.3
 
 ## configure Petsc
 
-note: only python v2 is supported.
-
-```bash
-python2.7 ./config/configure.py --CFLAGS='-O3' --CXXFLAGS='-O3' --FFLAGS='-O3' --with-debugging=no --download-mpich=yes --download-hdf5=yes --download-fblaslapack=yes --download-metis=yes --download-parmetis=yes --download-cmake=yes
-```
-
-define `PETSC_DIR` and `PETSC_ARCH`. You will see prompts when the configuration is completed.
+- define `PETSC_DIR` and `PETSC_ARCH`. You will see prompts when the configuration is completed.
 
 ```bash
 export PETSC_DIR=$PWD
 export PETSC_ARCH=arch-darwin-c-release 
 ```
+
+- Configure
+
+```bash
+python2.7 ./config/configure.py --CFLAGS='-O3' --CXXFLAGS='-O3' --FFLAGS='-O3' --with-debugging=no --download-mpich=yes --download-hdf5=yes --download-fblaslapack=yes --download-metis=yes --download-parmetis=yes --download-cmake=yes
+```
+
+note: only python v2 is supported.
 
 ## Compile Petsc
 
@@ -47,8 +49,10 @@ make -j4 pflotran
 ## regression test
 
 ```bash
+cd pflotran/regression_tests/default/543
+
 export MPIRUN=/Users/shua784/Dropbox/github/petsc/arch-darwin-c-debug/bin/mpiexec
-$MPIRUN -n 1 $PFLOTRAN_EXE -pflotranin 543_flow.in # use one core for this test
+$MPIRUN -n 1 $PFLOTRAN_EXE -pflotranin 543_flow.in # use only one core for this test
 ```
 
 Once the test model is finished (should take less than few seconds), the installation processes are done!
