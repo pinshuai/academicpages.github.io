@@ -14,54 +14,15 @@ module swap craype-haswell craype-mic-knl
 
 ### Set programming env
 
+- GNU
+
 The default environment on NERSC is `PrgEnv-intel`, and you need to switch to `PrgEnv-gnu`, which is applicable for most open-source codes.
 
 ```bash
 module swap PrgEnv-intel PrgEnv-gnu
-```
-
-Note: this will also automatically load `gcc/8.3.0`
-
-### Load `cmake`
-
-The default `/usr/bin/cmake` did not work well. Load `cmake` using
-
-```bash
 module load cmake
-```
-
-You should be able to test if it has been loaded by running `which cmake`,  and you should see the directory: `/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake`
-
-The cmake version is `3.14.4`
-
-###  Load MPI
-
-For compiling on cray system, the use of `cray-mpich` is recommended. **Now it will automatically load it for you when switching to `PrgEnv-gnu`.**
-
-```bash
-# module load cray-mpich
-```
-
-You can also show the installation path `MPICH_DIR` using
-
-```bash
-module show cray-mpich
-
-# return
-# CRAY_MPICH_DIR /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2
-```
-
-**IMPORTANT: copy `MPICH_DIR` or `CRAY_MPICH_DIR`, you will need this later!** 
-
-### load python 
-
-The default `/usr/bin/python` uses`2.7` and is missing a lot of packages for ATS regression test.
-
-```bash
 module load python/3.7-anaconda-2019.10
 ```
-
-
 
 This is what it looks like using `module list`
 
@@ -93,6 +54,18 @@ Currently Loaded Modulefiles:
  24) python/3.7-anaconda-2019.10 # new
 ```
 
+- Intel
+
+```bash
+module load cmake/3.18.2
+module swap  craype-hugepages2M craype-hugepages8M
+
+# Module list
+
+```
+
+
+
 ### Set path
 
 - If `set_env.sh` is available, do
@@ -112,7 +85,7 @@ export CRAYPE_LINK_TYPE=dynmaic # as of 10/22/2020
 export ATS_BASE=/global/project/projectdirs/m1800/pin/ats-master
 export ATS_BUILD_TYPE=Release # OR Debug
 export ATS_VERSION=master
-export OPENMPI_DIR=/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2 # from CRAY_MPICH_DIR
+export OPENMPI_DIR=$MPICH_DIR # automatically get from CRAY_MPICH_DIR
 
 export AMANZI_TPLS_BUILD_DIR=${ATS_BASE}/amanzi_tpls-build-${ATS_VERSION}-${ATS_BUILD_TYPE}
 export AMANZI_TPLS_DIR=${ATS_BASE}/amanzi_tpls-install-${ATS_VERSION}-${ATS_BUILD_TYPE}
@@ -145,7 +118,7 @@ cd ${ATS_BASE}
 git clone -b master http://github.com/amanzi/amanzi $AMANZI_SRC_DIR
 
 # optional
-git clone -b ecoon/land_cover http://github.com/amanzi/ats $ATS_SRC_DIR
+git clone -b master http://github.com/amanzi/ats $ATS_SRC_DIR
 ```
 
 ### configure Amanzi TPLs, Amanzi, and ATS
@@ -240,7 +213,7 @@ It should take less than a second to finish!
 
 # Running ATS on NERSC
 
-- (optional) if using ATS from IDEAS repo
+- (optional) if using ATS from IDEAS/Exasheds repo
 
 ```bash
 export IDEAS_HOME=/project/projectdirs/m2398/ideas
@@ -248,12 +221,12 @@ source ${IDEAS_HOME}/tools/init/ideas.bashrc
 
 # do one of the following to load ATS exe.
 module load ATS/dev-transpiration/basic/Release/PrgEnv-gnu-6.0.5
-#ATS/0.88/basic/Debug/PrgEnv-gnu-6.0.5
-#ATS/0.88/basic/Release/PrgEnv-gnu-6.0.5
-#ATS/dev-transpiration/basic/Debug/PrgEnv-gnu-6.0.5
-#ATS/dev-transpiration/basic/Release/PrgEnv-gnu-6.0.5
-#ATS/dev/basic/Debug/#PrgEnv-gnu-6.0.5#
-#ATS/dev/basic/Debug/PrgEnv-gnu-6.0.5
+
+# or 
+# module purge
+module use -a /global/project/projectdirs/m3421/ats-new/modulefiles
+#module load ats/master/cori-haswell/intel-6.0.5-mpich-7.7.10/opt
+module load ats/ecoon-land_cover/cori-haswell/intel-6.0.5-mpich-7.7.10/opt
 ```
 
 - first request some interactive node
@@ -283,4 +256,40 @@ srun -n 128 meshconvert --partition-method=2 ../American_final_mesh-100m-gauss3.
 srun -n 32 ats --xml_file=./spinup-soil.xml 
 ```
 
+## Update ATS
+
+````bash
+$ cd $ATS_SRC_DIR # this should be under /amanzi/src/physics/ats
+$ git pull
+$ cd $AMANZI_SRC_DIR
+$ git pull
+$ cd $AMANZI_BUILD_DIR
+$ make -j8 install
+````
+
+# Compile ATS on Lawrencium (LBNL)
+
+- set environment
+
+```bash
+# get modules and library
+export MODULEPATH=$MODULEPATH:/global/home/groups-sw/pc_ideas/modules 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/global/home/groups-sw/pc_ideas/sources/lapack-3.9.0-gcc-9.2/build-shared/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/global/home/groups-sw/pc_ideas/sources/lapack-3.9.0-gcc-9.2/build-static/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/global/home/groups-sw/pc_ideas/software/gcc-9.2.0-modules/lapack/3.5.0/lib64
+export PATH=$PATH:/global/home/groups-sw/pc_ideas/software/gcc-9.2.0-modules/lapack/3.5.0/lib
+# setup ats install env
+export ATS_BASE=/global/home/users/pshuai/ats_master
+export ATS_BUILD_TYPE=Release # OR Debug
+export ATS_VERSION=master
+export OPENMPI_DIR=/global/software/sl-7.x86_64/modules/gcc/9.2.0/openmpi/4.0.1-gcc # do not include ./bin
+
+# load modules
+module load gcc/9.2.0
+module load openmpi/4.0.1-gcc
+module load gcc-9.2.0/lapack/3.9.0
+module load cmake/3.15.0
+```
+
+- the rest of the steps are the same as installation on Cori. No need to change `bootstrap.sh`
 

@@ -7,7 +7,17 @@ This will show how to create customized conda environment on Mac.
 This example shows how to create new environment called `my_env` while specify the python version you want.
 
 ```bash
-$ conda create --name my_env python=3.7
+$ conda create --name geo -c conda-forge python ipykernel numpy pandas scipy scikit-learn matplotlib seaborn tqdm shapely rasterio PyShp geopandas h5py xarray rioxarray
+```
+
+## create kernel spec file (must do this inside the activated env!)
+
+In order for Jupyter to find your kernel, run following command and optionally choose the display kernel name (i.e., `MyEnv-jupyter`)
+
+```bash
+(my_env) $ python -m ipykernel install 
+# or
+(my_env) $ python -m ipykernel install --user --name geo --display-name geo
 ```
 
 ## install packages
@@ -30,13 +40,7 @@ Or using `pip`
 (my_env) $ pip install matplotlib
 ```
 
-## create kernel spec file
 
-In order for Jupyter to find your kernel, run following command and choose the kernel name (i.e., `MyEnv-jupyter`)
-
-```bash
-(my_env) $ python -m ipykernel install --user --name my_env --display-name MyEnv-jupyter
-```
 
 ## launch Jupyter
 

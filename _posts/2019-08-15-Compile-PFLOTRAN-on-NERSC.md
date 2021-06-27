@@ -189,3 +189,28 @@ make -j4 pflotran
 # make pflotran fast=1
 ```
 
+### automatically update
+
+use the following bash script to automatically update PFLOTRAN to the latest on master branch.
+
+```bash
+#! /bin/bash
+export PETSC_DIR=/global/project/projectdirs/pflotran/petsc-v3.13
+export PETSC_ARCH=cori_intel_O
+
+module load craype-haswell
+module load PrgEnv-intel
+module swap cray-mpich cray-mpich        # yes, swap it
+module load cray-hdf5-parallel
+module load cmake
+module load python # 2.7 or 3.7?
+module unload darshan
+
+echo "<<<<<<<<<<<<<<<<<<update pflotran repo<<<<<<<<<<<<<<<<<<"
+git pull
+
+echo "<<<<<<<<<<<<<<<<<<compile pflotran<<<<<<<<<<<<<<<<<<<<<<<"
+cd ./src/pflotran
+make -j8 pflotran
+```
+
